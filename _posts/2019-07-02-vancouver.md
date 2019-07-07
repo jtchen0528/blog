@@ -4,7 +4,7 @@ title: 溫哥華景點
 subtitle: VSP2018玩過的地方
 author: Jack
 icon: fa-cannabis
-categories: [Blog]
+categories: [Articles]
 ---
 
 趁還有時間時來分享一下去溫哥華附近的景點ㄅ。<br><br>

@@ -4,7 +4,7 @@ title: 黑蘋果簡易安裝教學
 subtitle: 來玩玩看mac吧！
 author: Jack
 icon: fa-user-secret
-categories: [Blog]
+categories: [Articles]
 comment: true
 ---
 
