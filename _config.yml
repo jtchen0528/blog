@@ -1,0 +1,27 @@
+title: 廢文集散地
+subtitle: jack34672
+description: Pro procrastinator
+
+author: Jack Chen
+email: jack34672@gmail.com
+avatar: assets/images/avatar.jpg
+
+baseurl: ""
+url: "https://jack34672.github.io"
+
+# Social settings
+facebook_url: https://www.facebook.com/jack34672.tw
+instagram_url: https://www.instagram.com/jack34672
+github_url: https://github.com/jack34672
+
+
+# Build settings
+remote_theme: chrisbobbe/jekyll-theme-prologue
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Necessary for Prologue theme:
+collections: [sections]
+
+google_analytics: UA-137821098-2
