@@ -14,16 +14,16 @@ categories: [Movie]
 雖然最後根本沒有Elementals也沒有幻術，但在科技幻術的呈現上我真的看得目瞪口呆，完全把我預期的內容演出來，看Peter困在自己的幻覺裡時真的有Mysterio真的是幻術大師的幻覺。<br>
 尤其是真的很像第一人稱遊戲在幻覺裡的感覺。(超級像 Batman Arkham Knight 裡中了稻草人的scare toxin出現的幻覺，感覺就抄他的。)<br>
 <div class="row">
-  <div class="6u $12u(mobile)">
-    <iframe src="https://www.youtube.com/embed/Ta-4Po7VoWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;  height: auto;" ></iframe>
+  <div class="6u 12u$(mobile)">
+    <iframe src="https://www.youtube.com/embed/Ta-4Po7VoWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
   </div>
-  <div class="6u $12u(mobile)">
-    <iframe src="https://www.youtube.com/embed/5prbhGhLMCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;  height: auto;" ></iframe>
+  <div class="6u 12u$(mobile)">
+    <iframe src="https://www.youtube.com/embed/5prbhGhLMCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
   </div>
 </div>
 <br>
 因此在特效的地方我看得超級開心，甚至連Mysterio的頭滾來滾去都有演出來。↓N年前的Mysterio。<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XABfTaa_aqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;  height: auto;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XABfTaa_aqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;"></iframe>
 
 <br>
 
@@ -31,7 +31,7 @@ categories: [Movie]
 而在與MJ的感情戲，有些可惜之處，但整體我還滿喜歡的，就是高中青春劇麻，沒什麼好苛求的。<br>
 喜歡MJ突如其來的吻，喜歡Peter的內心忌妒和幻想(因為根本就是我腦袋會想的事)，喜歡責任與心上人之間的拉鋸戰，更是喜歡最後經典的MJ swing。<br>
 但還是希望多點過去漫畫中或第一部電影中感性熱情的MJ，雖然這樣可能會被批評是父權遺毒，但阿就，漫畫就這樣演的嘛。↓理想中的蜘蛛人。<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sGmfEZD6OsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="width: 700px;  height: auto;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sGmfEZD6OsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="max-width: 700px;"></iframe>
 蜘蛛人就是要有段轟轟烈烈的愛情故事嘛，希望第三集有囉。<br><br>
 
 接下來就是要吐槽了。因為這部蜘蛛人完全就是給蜘蛛人粉看的，但漫威粉(像ㄏㄏ)就會覺得看了一部快樂的雷神索爾2的感覺，劇情偏廢的商業片。<br>
@@ -42,7 +42,7 @@ categories: [Movie]
 最後的最後，me and the boys勒幹，我還在墨西哥訪談的影片好像看到Michael Keaton，還以為禿鷹跟毒蠍人應該要來做一下事了吧，結果居然沒有。<br>
 <img style="max-width: 500px; height: auto;" src="https://i.kym-cdn.com/photos/images/newsfeed/001/499/185/c79.jpg"><br> 
 我最期待的蜘蛛人果然還是只有在Spider verse或Spiderman PS4裡有。<br> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e2bzrGxTFCk?start=42" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 700px;  height: auto;"></iframe><br> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e2bzrGxTFCk?start=42" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;"></iframe><br> 
 
 但最後看完的感覺還是很喜歡，畢竟我就是蜘蛛人粉，讚爆。<br>
 就是要青春洋溢又懷疑自我的蜘蛛人才對味。<br>
