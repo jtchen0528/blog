@@ -4,6 +4,7 @@ title: Spiderman - Far from Home
 subtitle: 蜘蛛人─離家日
 author: Jack
 icon: fa-spider
+icon-style: regular
 categories: [Movie]
 ---
 
