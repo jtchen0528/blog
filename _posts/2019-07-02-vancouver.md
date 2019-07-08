@@ -3,7 +3,7 @@ layout: post
 title: 溫哥華景點
 subtitle: VSP2018玩過的地方
 author: Jack
-icon: fa-cannabis
+icon: fa-canadian-maple-leaf
 categories: [Articles]
 ---
 
