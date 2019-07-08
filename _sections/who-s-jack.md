@@ -37,7 +37,7 @@ order: 2
 </div>
         
 <!-- Script pointing to search-script.js -->
-<script src="/assets/js/search.js" type="text/javascript"></script>
+<script src="assets\js\search.js" type="text/javascript"></script>
         
 <!-- Configuration -->
 <script>
@@ -45,6 +45,6 @@ order: 2
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         searchResultTemplate: '<li><div class="row" style="margin-top: 10px;"><div class="7u 12u$(mobile)" style="text-align: left;"><h4 style="display: inline;"><a href="{url}">[{category}] {title}</a></h4><p style="margin: 0px;display: inline;padding-left: 10px;">{date}</p></div><div class="5u 12u$(mobile)" style="text-align: left;"><p style="margin: 0px; padding-top: 5px;">{subtitle}</p></div></div></li>',
-        json: '/search.json'
+        json: 'search.json'
     })
 </script>
