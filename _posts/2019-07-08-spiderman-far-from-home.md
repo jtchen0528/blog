@@ -13,14 +13,9 @@ categories: [Movie]
 故事劇情我原本以為是Mysterio跟Elememtals真的是多重宇宙來的，然後跟蜘蛛人在聯手之後有些理念不合，變成另一個反派這樣，然後他的幻術真的是幻術。<br>
 雖然最後根本沒有Elementals也沒有幻術，但在科技幻術的呈現上我真的看得目瞪口呆，完全把我預期的內容演出來，看Peter困在自己的幻覺裡時真的有Mysterio真的是幻術大師的幻覺。<br>
 尤其是真的很像第一人稱遊戲在幻覺裡的感覺。(超級像 Batman Arkham Knight 裡中了稻草人的scare toxin出現的幻覺，感覺就抄他的。)<br>
-<div class="row">
-  <div class="6u 12u$(mobile)">
-    <iframe src="https://www.youtube.com/embed/Ta-4Po7VoWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
-  </div>
-  <div class="6u 12u$(mobile)">
-    <iframe src="https://www.youtube.com/embed/5prbhGhLMCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
-  </div>
-</div>
+<iframe src="https://www.youtube.com/embed/Ta-4Po7VoWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
+<iframe src="https://www.youtube.com/embed/5prbhGhLMCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;" ></iframe>
+
 <br>
 因此在特效的地方我看得超級開心，甚至連Mysterio的頭滾來滾去都有演出來。↓N年前的Mysterio。<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XABfTaa_aqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 700px;"></iframe>
