@@ -17,7 +17,7 @@ order: 2
   <div class="7u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding: 30px; margin: 0px;">
-        ===當兵中===
+        ===當兵中===<br>
         我叫陳兆廷，是ㄍ普通大二生，讀清華大學的電機系。<br>
 最近進入系上的VSLab，未來應該做ML/DL相關。<br>
 住在北投/新竹，喜歡看電影/影集/音樂/玩電腦。<br>
