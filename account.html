@@ -1,23 +1,45 @@
 ---
 layout: page
 permalink: /account
-title: 帳號
+title: 帳號管理
 icon: fa-user
 order: 6
 hide: true
 ---
 
+<h3>管理員</h3>>
 <form class="center-align admin-actions admin" style="display: none; margin: 40px auto; max-width: 300px;">
     <input type="email" placeholder="User email" id="admin-email" required />
     <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
 </form>
 
+<h3>拔除管理員</h3>>
 <form class="center-align remove-admin-actions admin" style="display: none; margin: 40px auto; max-width: 300px;">
     <input type="email" placeholder="User email" id="remove-admin-email" required />
     <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
 </form>
 
 <script>
+
+auth.onAuthStateChanged(user =>{
+    if(user){
+        //console.log('user logged in: ', user);
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin = idTokenResult.claims.admin;
+            setupUI(user);
+        })
+        // get data
+        db.collection('guides').onSnapshot(snapshot => {
+            // setupGuides(snapshot.docs);
+        }, err => {
+            console.log(err.message)
+        })
+    } else { 
+        //console.log('user logged out.');
+        setupUI();
+        // setupGuides([]);
+    }
+})
 
     const adminForm = document.querySelector('.admin-actions');
     adminForm.addEventListener('submit', (e) => {
