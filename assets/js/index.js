@@ -23,7 +23,7 @@ const setupUI = (user) => {
     // loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
-    accountDetails.innerHTML = 'Not Logged in';
+    accountDetails.innerHTML = '';
     // adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
     // loggedOutLinks.forEach(item => item.style.display = 'block');
