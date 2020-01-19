@@ -1,7 +1,9 @@
 <!-- Logo -->
 <div id="logo">
   <a id="home-link">
-    <span class="image avatar48"><img href="{{- '/' | absolute_url -}}" src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}" /></span>
+    <a href="{{- '/' | absolute_url -}}">
+      <span class="image avatar48"><img  src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}" /></span>
+    </a>
     <div class="account-details"></div>
     <div class="logged-in" style = "display: none; padding: 8px 15px; margin-top: 15px;">
       <button id="logout">登出</button>
