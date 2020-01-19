@@ -13,9 +13,9 @@ const setupUI = (user) => {
     }
     db.collection('users').doc(user.uid).get().then(doc => {
       const html = `
-        <div> Logged in as ${user.email}</div>
-        <div>${doc.data().bio}</div>
-        <div class = "pink-text">${user.admin ? 'Admin' : ''}</div>
+        <p>${user.email}</p>
+        <p>${doc.data().bio}</p>
+        <p class = "pink-text">${user.admin ? 'Admin' : ''}</p>
       `;
       accountDetails.innerHTML = html;
     })
