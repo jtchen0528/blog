@@ -1,15 +1,13 @@
 <!-- Logo -->
 <div id="logo">
-  <a href="{{- '/' | absolute_url -}}" id="home-link">
-    <span class="image avatar48"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}" /></span>
-    <h1 id="title">廢文集散地</h1>
-    <p>@jack34672</p>
+  <a id="home-link">
+    <span class="image avatar48" href="{{- '/' | absolute_url -}}"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}" /></span>
+    <div class="account-details"></div>
+    <div class="logged-in" style = "display: none; padding: 8px 15px; margin-top: 15px;">
+      <button id="logout">登出</button>
+    </div>
+    <div class="logged-out" style = "display: none; padding: 8px 15px; margin-top: 15px;">
+      <button id="login" onclick="location.href='/blog/login'">登入</button>
+    </div>
   </a>
-</div>
-<div class="account-details"></div>
-<div class="logged-in" style = "display: none; padding: 8px 15px; margin-top: 15px;">
-  <button id="logout">登出</button>
-</div>
-<div class="logged-out" style = "display: none; padding: 8px 15px; margin-top: 15px;">
-  <button id="login" onclick="location.href='/blog/login'">登入</button>
 </div>

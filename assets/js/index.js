@@ -24,7 +24,7 @@ const setupUI = (user) => {
     loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
-    accountDetails.innerHTML = ``;
+    accountDetails.innerHTML = `<h1 id="title" href="{{- '/' | absolute_url -}}>廢文集散地</h1><p>@jack34672</p>`;
     adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
     loggedOutLinks.forEach(item => item.style.display = 'block');
