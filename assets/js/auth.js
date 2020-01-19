@@ -18,7 +18,7 @@ auth.onAuthStateChanged(user =>{
         //console.log('user logged in: ', user);
         user.getIdTokenResult().then(idTokenResult => {
             user.admin = idTokenResult.claims.admin;
-            // setupUI(user);
+            setupUI(user);
         })
         // get data
         db.collection('guides').onSnapshot(snapshot => {
@@ -28,7 +28,7 @@ auth.onAuthStateChanged(user =>{
         })
     } else { 
         //console.log('user logged out.');
-        // setupUI();
+        setupUI();
         // setupGuides([]);
     }
 })
