@@ -15,7 +15,7 @@ const setupUI = (user) => {
       const html = `
         <p>${user.email}</p>
         <p>${doc.data().bio}</p>
-        <p class = "pink-text">${user.admin ? 'Admin' : ''}</p>
+        <p>${user.admin ? 'Admin' : ''}</p>
       `;
       accountDetails.innerHTML = html;
     })
