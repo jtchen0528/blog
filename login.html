@@ -12,11 +12,11 @@ hide: true
     <form id="login-form" style="padding-left: 10px; padding-right: 10px;">
       <div class="row" style="margin-top: 10px;">
           <div class="5u input-field" style="padding-left: 5px; padding-right: 5px;">
-            <label for="login-email">帳號</label>
+            <label for="login-email"style="text-align: center;">帳號</label>
             <input type="email" id="login-email" placeholder="帳號" required />
           </div>
           <div class="5u input-field" style="padding-left: 5px; padding-right: 5px;">
-            <label for="login-password">密碼</label>
+            <label for="login-password" style="text-align: center;">密碼</label>
             <input type="password" id="login-password" placeholder="密碼" required />
           </div>
           <div class="2u" style="padding-left: 5px; padding-right: 5px; text-align: center;">
@@ -26,4 +26,32 @@ hide: true
       <p class='error'></p>
     </form>
     <hr style="margin-top: 25px;">
-  </div>
+</div>
+
+<div style="max-width: 700px; margin: auto;" id="modal-signup">
+    <h2>沒有帳號嗎？創一個吧！</h2>
+    <hr>
+    <form id="signup-form" style="padding-left: 10px; padding-right: 10px;">
+      <div class="row" style="margin-top: 10px;">
+          <div class="6u input-field" style="padding-left: 5px; padding-right: 5px;">
+            <label for="signup-email"style="text-align: center;">帳號</label>
+            <input type="email" id="signup-email" placeholder="帳號" required />
+          </div>
+          <div class="6u input-field" style="padding-left: 5px; padding-right: 5px;">
+            <label for="signup-password" style="text-align: center;">密碼</label>
+            <input type="password" id="signup-password" placeholder="密碼" required />
+          </div>
+      </div>
+      <div class="row" style="margin-top: 10px;">
+        <div class="8u input-field" style="padding-left: 5px; padding-right: 5px;">
+          <label for="signup-user"style="text-align: center;">用戶名</label>
+          <input type="text" id="signup-user" placeholder="用戶名" required />
+        </div>
+        <div class="4u" style="padding-left: 5px; padding-right: 5px; text-align: center;">
+          <input type="submit" value="送出" style="padding: 10px; margin: 0 auto; display: block;">
+        </div>
+      </div>
+      <p class='error'></p>
+    </form>
+    <hr style="margin-top: 25px;">
+</div>
