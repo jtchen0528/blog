@@ -12,6 +12,11 @@ hide: true
     <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
 </form>
 
+<form class="center-align remove-admin-actions admin" style="display: none; margin: 40px auto; max-width: 300px;">
+    <input type="email" placeholder="User email" id="remove-admin-email" required />
+    <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
+</form>
+
 <script>
 
     const adminForm = document.querySelector('.admin-actions');
@@ -21,6 +26,17 @@ hide: true
     const adminEmail = document.querySelector('#admin-email').value;
     const addAdminRole = functions.httpsCallable('addAdminRole');
     addAdminRole({ email: adminEmail }).then(result => {
+        console.log(result);
+    });
+    });
+
+    const removeadminForm = document.querySelector('.remove-admin-actions');
+    removeadminForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const removeadminEmail = document.querySelector('#remove-admin-email').value;
+    const removeAdminRole = functions.httpsCallable('removeAdminRole');
+    removeAdminRole({ email: removeadminEmail }).then(result => {
         console.log(result);
     });
     });

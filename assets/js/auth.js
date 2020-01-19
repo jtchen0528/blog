@@ -5,7 +5,7 @@
 // listen for auth status changes
 auth.onAuthStateChanged(user =>{
     if(user){
-        console.log('user logged in: ', user);
+        //console.log('user logged in: ', user);
         user.getIdTokenResult().then(idTokenResult => {
             user.admin = idTokenResult.claims.admin;
             setupUI(user);
