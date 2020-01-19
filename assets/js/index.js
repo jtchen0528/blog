@@ -20,7 +20,7 @@ const setupUI = (user) => {
       accountDetails.innerHTML = html;
     })
     //toggle UI elements
-    // loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedInLinks.forEach(item => item.style.display = 'block');
     // loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
@@ -28,7 +28,7 @@ const setupUI = (user) => {
     // adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
     // loggedOutLinks.forEach(item => item.style.display = 'block');
-    // loggedInLinks.forEach(item => item.style.display = 'none');
+    loggedInLinks.forEach(item => item.style.display = 'none');
   }
 }
 
