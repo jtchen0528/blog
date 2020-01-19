@@ -5,7 +5,7 @@
 <!-- Nav -->
 <nav id="nav">
   <ul>
-    <li><a href="/blog/account" id="" class="logged-in">
+    <li><a href="/blog/account" id="" class="logged-in" style = "display: none;">
       <span class="account fa-user-circle">帳號</span>
     </a></li>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
