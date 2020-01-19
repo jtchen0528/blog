@@ -3,7 +3,7 @@ title: 聊天室
 subtitle: 想即時聊天都可以ㄛ
 icon: fa-comment-dots
 permalink: /chat
-order: 4
+order: 5
 ---
 
 <!-- 留言板 -->
