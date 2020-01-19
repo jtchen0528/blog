@@ -13,8 +13,9 @@ const setupUI = (user) => {
     }
     db.collection('users').doc(user.uid).get().then(doc => {
       const html = `
-        <h4 style="color: white;">${doc.data().bio}</h4>
-        <h4 style="color: pink;">${user.admin ? 'Admin' : ''}</h4>
+        <h1 id="title">${user.email}</h1>
+        <p>${doc.data().bio}</p>
+        <p style="color: pink;">${user.admin ? 'Admin' : ''}</p>
       `;
       accountDetails.innerHTML = html;
     })
@@ -23,7 +24,7 @@ const setupUI = (user) => {
     // loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
-    accountDetails.innerHTML = '';
+    accountDetails.innerHTML = `<h1 id="title">{{- site.title -}}</h1><p>{{- site.subtitle -}}</p>`;
     // adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
     // loggedOutLinks.forEach(item => item.style.display = 'block');
