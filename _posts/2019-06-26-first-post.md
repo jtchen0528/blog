@@ -5,6 +5,7 @@ subtitle: 寫寫平常發生ㄉ事ㄅ 大概
 author: Jack
 icon: fa-star
 categories: [Diary]
+hide: true
 ---
 <div>
 最近又不小心碰到github.io，想到我的github.io一直被奇怪的landing page佔據，想說來寫個blog好了 <br>
