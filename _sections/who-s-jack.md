@@ -30,7 +30,7 @@ order: 2
   </div>
 </div>
 
-<!-- Html Elements for Search -->
+<!-- Html Elements for Search
 <div id="search-container">
     <span class="icon fa-search">搜尋文章</span>
     <input type="text" id="search-input" placeholder="" style="background: rgba(255,255,255,0.75); border-radius: 0.35em; box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05); border: solid 1px rgba(0,0,0,0.15)">
@@ -48,4 +48,4 @@ order: 2
         searchResultTemplate: '<li><div class="row" style="margin-top: 10px;"><div class="7u 12u$(mobile)" style="text-align: left;"><h4 style="display: inline;"><a href="{url}">[{category}] {title}</a></h4><p style="margin: 0px;display: inline;padding-left: 10px;">{date}</p></div><div class="5u 12u$(mobile)" style="text-align: left;"><p style="margin: 0px; padding-top: 5px;">{subtitle}</p></div></div></li>',
         json: 'search.json'
     })
-</script>
+</script> 
