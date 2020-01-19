@@ -31,11 +31,11 @@
         {%- else -%}
           <li><a href="{{- '/' | absolute_url -}}" id="broken-link"><span class="icon fa-unlink">[broken link]</span></a></li>
         {%- endif -%}
-        <li><a href="/account" id="" class="active">
-          <span class="account">帳號</span>
-        </a></li>
       {%- endfor -%}
     {%- endunless -%}
+    <li><a href="/account" id="" class="active">
+      <span class="account">帳號</span>
+    </a></li>
     {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
     {%- if _pages[0] and _sections[0] -%}<hr>{%- endif -%}
     {%- unless _sections == null -%}
