@@ -5,6 +5,9 @@
 <!-- Nav -->
 <nav id="nav">
   <ul>
+    <li><a href="/account" id="" class="logged-in">
+      <span class="account fa-desktop">帳號</span>
+    </a></li>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
@@ -33,9 +36,6 @@
         {%- endif -%}
       {%- endfor -%}
     {%- endunless -%}
-    <li><a href="/account" id="" class="active">
-      <span class="account">帳號</span>
-    </a></li>
     {%- assign _sections = include.section_items | where_exp: "section", "section.hide != true" -%}
     {%- if _pages[0] and _sections[0] -%}<hr>{%- endif -%}
     {%- unless _sections == null -%}
