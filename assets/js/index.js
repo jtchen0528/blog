@@ -1,5 +1,5 @@
 // const guideList = document.querySelector('.guides');
-// const loggedOutLinks = document.querySelectorAll('.logged-out');
+const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
 // const adminItems = document.querySelectorAll('.admin');
@@ -21,13 +21,13 @@ const setupUI = (user) => {
     })
     //toggle UI elements
     loggedInLinks.forEach(item => item.style.display = 'block');
-    // loggedOutLinks.forEach(item => item.style.display = 'none');
+    loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
     accountDetails.innerHTML = `<h1 id="title">{{- site.title -}}</h1><p>{{- site.subtitle -}}</p>`;
     // adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
-    // loggedOutLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'block');
     loggedInLinks.forEach(item => item.style.display = 'none');
   }
 }
