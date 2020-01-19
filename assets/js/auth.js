@@ -52,6 +52,14 @@ auth.onAuthStateChanged(user =>{
 // })
 
 
+//logout
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+    console.log('signout')
+});
+
 // signup
 const signupForm = document.querySelector("#signup-form");
 signupForm.addEventListener('submit', (e) =>{
@@ -74,14 +82,6 @@ signupForm.addEventListener('submit', (e) =>{
     }).catch(err => {
         signupForm.querySelector('.error').innerHTML = err.message;
     });
-});
-
-//logout
-const logout = document.querySelector('#logout');
-logout.addEventListener('click', (e) => {
-    e.preventDefault();
-    auth.signOut();
-    console.log('signout')
 });
 
 //login
