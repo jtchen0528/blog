@@ -44,7 +44,7 @@ const setupGuides = (data) => {
         <div class="container">
           <header>
             <h2><a href="#">${guide.title}</a></h2>
-            <p>${guide.time}</p>
+            <p>guide.time</p>
           </header>
           <p>黑蘋果Hackintosh安裝教學(GL552VW)
             macOS裝在ASUS筆電好潮ㄛ&gt;&lt;
