@@ -7,6 +7,44 @@ permalink: /articles
 order: 3
 ---
 
+<div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form">
+        <div class="input-field">
+          <input type="text" id="title" required>
+          <label for="title">標題</label>
+        </div>
+        <div class="input-field">
+          <textarea id="content" required></textarea>
+          <label for="content">內容</label>
+        </div>
+        <button >建立</button>
+      </form>
+    </div>
+</div>
+
+
 <div class="guides">
 
 </div>
+
+<script>
+// create new guides
+    const createForm = document.querySelector('#create-form');
+    createForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        db.collection('guides').add({
+            title: createForm['title'].value,
+            content: createForm['content'].value
+        }).then(() => {
+            // close modal and reset form
+            const modal = document.querySelector('#modal-create');
+            M.Modal.getInstance(modal).close();
+            createForm.reset();
+        }).catch(err => {
+            console.log(err.message);
+        })
+
+    })
+</script>
