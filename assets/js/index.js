@@ -42,6 +42,7 @@ const setupFeeds = (data) => {
       //console.log(feed)
       db.collection('users').doc(feed.author).get().then(doc => {
         //console.log(doc.data().user)
+        
         const li = `
         <section id="${feed.title}" class="shade-three">
           <div class="" style="max-width: 400px; margin: auto;">
@@ -51,7 +52,7 @@ const setupFeeds = (data) => {
               </div>
               <div class="8u" style="padding: 0px;">
                 <h4 style="padding-top: 10px; text-align:center; display: inline;">${doc.data().user}</h4>
-                <h5 class="date" style="text-align:center; display: inline; padding-top: 10px; padding-left: 5px;">${feed.postedAt.toDate()}</h5>
+                <h5 class="date" style="text-align:center; display: inline; padding-top: 10px; padding-left: 5px;">${feed.postedAt.toDate().substring(4,21)}</h5>
                 <h4 style="padding-top: 10px; display: inline;">：</h4>
                 <p style=" text-align: center; margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
               </div>
