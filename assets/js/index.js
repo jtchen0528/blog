@@ -44,7 +44,7 @@ const setupFeeds = (data) => {
         <div class="container">
           <header>
             <h2><a href="#">${feed.title}</a></h2>
-            <p>${feed.postedAt}</p>
+            <p>${feed.postedAt.toDate()}</p>
           </header>
           <p>${feed.content}
           </p>
