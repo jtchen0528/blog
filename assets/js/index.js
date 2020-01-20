@@ -44,15 +44,18 @@ const setupFeeds = (data) => {
         //console.log(doc.data().user)
         const li = `
         <section id="${feed.title}" class="shade-three">
-          <div class="container">
-            <header>
-              <h2><a href="#">${feed.title}</a></h2>
-              <p>${doc.data().user}</p>
-              <p>${feed.postedAt.toDate()}</p>
-            </header>
-            <p>${feed.content}
-            </p>
-            <a href="#">read more</a>
+          <div class="" style="max-width: 400px; margin: auto;">
+            <div class="row">
+              <div class="4u" style="padding: 0px;">
+                <img src="https://www.gravatar.com/avatar/${doc.data().user}?s=100&d=retro" style="width: 80px;  border-radius: 10px; height: auto; margin-left: 30px;"/>
+              </div>
+              <div class="8u" style="padding: 0px;">
+                <h4 style="padding-top: 10px; text-align:center; display: inline;">${doc.data().user}</h4>
+                <h5 class="date" style="text-align:center; display: inline; padding-top: 10px; padding-left: 5px;">${moment(feed.postedAt.toDate()).fromNow()}</h5>
+                <h4 style="padding-top: 10px; display: inline;">：</h4>
+                <p style=" text-align: center; margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
+              </div>
+            </div>
           </div>
         </section>
         `;
