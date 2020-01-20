@@ -1,4 +1,4 @@
-const guideList = document.querySelector('.guides');
+const feedList = document.querySelector('.feeds');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
@@ -33,21 +33,20 @@ const setupUI = (user) => {
 }
 
 // setup guides
-const setupGuides = (data) => {
+const setupFeeds = (data) => {
 
   if(data.length){
     let html = '';
     data.forEach(doc => {
-      const guide = doc.data();
+      const feed = doc.data();
       const li = `
-      <section id="${guide.title}" class="shade-three">
+      <section id="${feed.title}" class="shade-three">
         <div class="container">
           <header>
-            <h2><a href="#">${guide.title}</a></h2>
-            <p>${guide.postedAt}</p>
+            <h2><a href="#">${feed.title}</a></h2>
+            <p>${feed.postedAt}</p>
           </header>
-          <p>黑蘋果Hackintosh安裝教學(GL552VW)
-            macOS裝在ASUS筆電好潮ㄛ&gt;&lt;
+          <p>${feed.content}
           </p>
           <a href=#"">read more</a>
         </div>
@@ -55,8 +54,8 @@ const setupGuides = (data) => {
       `;
       html += li; 
     });
-    guideList.innerHTML = html;
+    feedList.innerHTML = html;
   } else {
-    guideList.innerHTML = '<h5 class = "center-align">Login to view guides</h5>';
+    feedList.innerHTML = '<h5 class = "center-align">Login to view guides</h5>';
   }
 }

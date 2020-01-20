@@ -10,7 +10,7 @@ order: 3
 <div id="modal-create logged-in" class="modal">
     <div class="modal-content">
       <h4>發表文章</h4><br />
-      <form id="create-form">
+      <form id="feeds-form">
         <div class="input-field">
             <label for="title">標題</label>
             <input type="text" id="title" required>
@@ -25,13 +25,13 @@ order: 3
 </div>
 
 
-<div class="guides">
+<div class="feeds">
 
 </div>
 
 <script>
 // create new guides
-    const createForm = document.querySelector('#create-form');
+    const createForm = document.querySelector('#feeds-form');
     createForm.addEventListener('submit', (e) => {
         e.preventDefault();
         db.collection('feeds').add({
