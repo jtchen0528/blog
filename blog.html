@@ -31,7 +31,7 @@ order: 3
 
 <script>
 // create new guides
-    var user = auth.currentUser;
+    const user = auth.currentUser;
     console.log(user);
     const createForm = document.querySelector('#feeds-form');
     createForm.addEventListener('submit', (e) => {
