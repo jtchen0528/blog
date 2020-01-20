@@ -12,14 +12,14 @@ auth.onAuthStateChanged(user =>{
         })
         // get data
         db.collection('guides').onSnapshot(snapshot => {
-            // setupGuides(snapshot.docs);
+            setupGuides(snapshot.docs);
         }, err => {
             console.log(err.message)
         })
     } else { 
         //console.log('user logged out.');
         setupUI();
-        // setupGuides([]);
+        setupGuides([]);
     }
 })
 
