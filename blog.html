@@ -31,7 +31,7 @@ order: 3
 
 <script>
 // create new guides
-    var user = firebase.auth().currentUser;
+    var user = auth.currentUser;
     console.log(user);
     const createForm = document.querySelector('#feeds-form');
     createForm.addEventListener('submit', (e) => {
