@@ -40,8 +40,6 @@ order: 3
             postedAt: firebase.firestore.Timestamp.now()
         }).then(() => {
             // close modal and reset form
-            const modal = document.querySelector('#modal-create');
-            M.Modal.getInstance(modal).close();
             createForm.reset();
         }).catch(err => {
             console.log(err.message);
