@@ -1,4 +1,4 @@
-// const guideList = document.querySelector('.guides');
+const guideList = document.querySelector('.guides');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
@@ -40,10 +40,18 @@ const setupGuides = (data) => {
     data.forEach(doc => {
       const guide = doc.data();
       const li = `
-      <li>
-        <div class="">${guide.title}</div>
-        <div class="">${guide.content}</div>
-      </li>
+      <section id="${guide.title}" class="shade-three">
+        <div class="container">
+          <header>
+            <h2><a href="#">${guide.title}</a></h2>
+            <p>${guide.time}</p>
+          </header>
+          <p>黑蘋果Hackintosh安裝教學(GL552VW)
+            macOS裝在ASUS筆電好潮ㄛ&gt;&lt;
+          </p>
+          <a href=#"">read more</a>
+        </div>
+      </section>
       `;
       html += li; 
     });
