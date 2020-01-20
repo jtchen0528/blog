@@ -39,7 +39,9 @@ const setupFeeds = (data) => {
     let html = '';
     data.forEach(doc => {
       const feed = doc.data();
+      console.log(feed)
       db.collection('users').doc(feed.author).get().then(doc => {
+        console.log(doc.data().user)
         const li = `
         <section id="${feed.title}" class="shade-three">
           <div class="container">
