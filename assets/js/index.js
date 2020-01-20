@@ -57,10 +57,8 @@ const setupFeeds = (data) => {
         </section>
         `;
         html += li; 
+        feedList.innerHTML = html;
       })
-    }).then(()=> {
-      console.log(html);
-      feedList.innerHTML = html;
     });
   } else {
     feedList.innerHTML = '<h5 class = "center-align">Login to view guides</h5>';
