@@ -47,7 +47,7 @@ const setupFeeds = (data) => {
           <div class="" style="max-width: 400px; margin: auto;">
             <div class="row">
               <div class="4u" style="padding: 0px;">
-                <img src="https://www.gravatar.com/avatar/${user.email}?s=100&d=retro" style="width: 80px;  border-radius: 10px; height: auto; margin-left: 30px;"/>
+                <img src="https://www.gravatar.com/avatar/${escapeHtml(doc.data().user)}?s=100&d=retro" style="width: 80px;  border-radius: 10px; height: auto; margin-left: 30px;"/>
               </div>
               <div class="8u" style="padding: 0px;">
                 <h4 style="padding-top: 10px; text-align:center; display: inline;">${doc.data().user}</h4>
