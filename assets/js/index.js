@@ -39,23 +39,23 @@ const setupFeeds = (data) => {
     let html = '';
     data.forEach(doc => {
       const feed = doc.data();
-      db.collection('users').doc(feed.author).get().then(doc => {
-        const li = `
-        <section id="${feed.title}" class="shade-three">
-          <div class="container">
-            <header>
-              <h2><a href="#">${feed.title}</a></h2>
-              <p>${doc.data().user}</p>
-              <p>${feed.postedAt.toDate()}</p>
-            </header>
-            <p>${feed.content}
-            </p>
-            <a href=#"">read more</a>
-          </div>
-        </section>
-        `;
-        html += li; 
-      })
+      // db.collection('users').doc(feed.author).get().then(doc => {
+      //   const li = `
+      //   <section id="${feed.title}" class="shade-three">
+      //     <div class="container">
+      //       <header>
+      //         <h2><a href="#">${feed.title}</a></h2>
+      //         <p>${doc.data().user}</p>
+      //         <p>${feed.postedAt.toDate()}</p>
+      //       </header>
+      //       <p>${feed.content}
+      //       </p>
+      //       <a href=#"">read more</a>
+      //     </div>
+      //   </section>
+      //   `;
+      //   html += li; 
+      // })
     });
     feedList.innerHTML = html;
   } else {
