@@ -1,7 +1,7 @@
 ---
 title: 聊天室
 subtitle: 想即時聊天都可以ㄛ
-icon: fa-comment-dots
+icon: fa-comments
 permalink: /chat
 order: 5
 ---
