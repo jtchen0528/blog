@@ -38,7 +38,7 @@ order: 3
         e.preventDefault();
         db.collection('feeds').add({
             title: createForm['title'].value,
-            author: user.user,
+            author: user.email,
             content: createForm['content'].value,
             postedAt: firebase.firestore.Timestamp.now(),
             date: firebase.firestore.Timestamp.now().toDate()
