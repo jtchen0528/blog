@@ -37,7 +37,7 @@ order: 3
         db.collection('feeds').add({
             title: createForm['title'].value,
             content: createForm['content'].value,
-            postedAt: db.FieldValue.serverTimestamp()
+            postedAt: firebase.firestore.Timestamp.now()
         }).then(() => {
             // close modal and reset form
             const modal = document.querySelector('#modal-create');
