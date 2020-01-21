@@ -29,19 +29,6 @@ order: 4
 <script>
 // create new guides
 
-const user = auth.currentUser;
-    if(user){
-        //console.log('user logged in: ', user);
-        user.getIdTokenResult().then(idTokenResult => {
-            user.admin = idTokenResult.claims.admin;
-            setupUI(user);
-        })
-    } else { 
-        //console.log('user logged out.');
-        setupUI();
-    }
-
-
     const createForm = document.querySelector('#feeds-form');
     createForm.addEventListener('submit', (e) => {
         e.preventDefault();

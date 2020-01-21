@@ -41,19 +41,6 @@ order: 5
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
 <script>
 
-    const user = auth.currentUser;
-    if(user){
-        //console.log('user logged in: ', user);
-        user.getIdTokenResult().then(idTokenResult => {
-            user.admin = idTokenResult.claims.admin;
-            setupUI(user);
-        })
-    } else { 
-        //console.log('user logged out.');
-        setupUI();
-    }
-
-
 $(function() {
   var ref = new Firebase("https://jack34672-f6932.firebaseio.com/"),
     postRef = ref.child(slugify(window.location.pathname));
