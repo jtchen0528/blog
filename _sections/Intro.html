@@ -78,19 +78,22 @@ $(function() {
     });
 
     $("#comment").submit(function() {
-      if(($("#name").val()!='')&&($("#message").val()!='')){
-      $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
-        {msg:$("#name").val() + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
-        function(e){
-          console.log(e);
-      });
-      var a = postRef.push();
-      a.set({
-        name: $("#name").val(),
-        message: $("#message").val(),
-        md5Email: md5($("#name").val()),
-        postedAt: Firebase.ServerValue.TIMESTAMP
-      });
+      if(($("#message").val()!='')){
+        const user = auth.currentUser;
+        db.collection('users').doc(user.uid).get().then(doc => {
+          $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
+            {msg: doc.data().user + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
+            function(e){
+              console.log(e);
+          });
+          var a = postRef.push();
+          a.set({
+            name: doc.data().user,
+            message: $("#message").val(),
+            md5Email: doc.data().user,
+            postedAt: Firebase.ServerValue.TIMESTAMP
+          });
+        });
       }
 
       $("input[type=text], textarea").val("");
