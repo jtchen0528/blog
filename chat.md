@@ -14,19 +14,17 @@ order: 5
 
 <div style="max-width: 700px; margin: auto;">
   <hr>
-  <form id="comment" style="padding-left: 10px; padding-right: 10px;">
-    <div class="row" style="margin-top: 10px;">
-        <div class="4u" style="padding-left: 5px; padding-right: 5px;">
-          <input type="text" id="name" placeholder="暱稱">
+    <form id="comment" style="padding-left: 25px; padding-right: 25px;" class="logged-in">
+      <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
+      <div class="row" style="margin-top: 10px;">
+        <div class="10u 12u$(mobile)" style="padding-left: 5px; padding-right: 5px;">
+          <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="想說什麼">
         </div>
-        <div class="6u" style="padding-left: 5px; padding-right: 5px;">
-          <input id="message" type="text" placeholder="想說什麼">
+        <div class="2u 12u$(mobile)" >
+          <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
         </div>
-        <div class="2u" style="padding-left: 5px; padding-right: 5px; text-align: center;">
-          <input type="submit" value="送出" style="padding: 10px; margin: 0 auto; display: block;">
-        </div>
-    </div>
-  </form>
+      </div>
+    </form>
   <hr style="margin-top: 25px;">
   <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無對話</h4></div>
 </div>
@@ -48,7 +46,7 @@ $(function() {
       $(".comments").prepend('<div class="comment" style="max-width: 400px; margin: auto;">' +
           '<div class="row">'+
           '<div class="4u" style="padding: 0px;">' + 
-          '<img src="https://www.gravatar.com/avatar/' + escapeHtml(newPost.md5Email) + '?s=100&d=retro" style="width: 80px;  border-radius: 10px; height: auto; margin-left: 30px;"/> ' + 
+          '<img src="https://api.adorable.io/avatars/150/' + escapeHtml(newPost.md5Email) + '@adorable.io.png" style="width: 80px; height: auto; margin-left: 30px; border-radius: 10px;"/> ' + 
           '</div>'+
           '<div class="8u" style="padding: 0px;">' + 
             '<h4 style="padding-top: 10px; text-align:center; display: inline;">' + escapeHtml(newPost.name) + '</h4>' +
@@ -64,20 +62,25 @@ $(function() {
     });
 
     $("#comment").submit(function() {
-      $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
-        {msg:$("#name").val() + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
-        function(e){
-          console.log(e);
-      });
-      var a = postRef.push();
-      a.set({
-        name: $("#name").val(),
-        message: $("#message").val(),
-        md5Email: md5($("#name").val()),
-        postedAt: Firebase.ServerValue.TIMESTAMP
-      });
-
-      $("input[type=text], textarea").val("");
+      if($("#message").val()!=''){
+        const user = auth.currentUser;
+        db.collection('users').doc(user.uid).get().then(doc => {
+          $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
+            {msg: doc.data().user + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
+            function(e){
+              console.log(e);
+          });
+          var a = postRef.push();
+          a.set({
+            name: doc.data().user,
+            message: $("#message").val(),
+            md5Email: doc.data().user,
+            postedAt: Firebase.ServerValue.TIMESTAMP
+          });
+          $("input[type=text], textarea").val("");
+          
+        });
+      }
       return false;
     });
 });
