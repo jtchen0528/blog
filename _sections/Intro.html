@@ -78,7 +78,7 @@ $(function() {
     });
 
     $("#comment").submit(function() {
-      if(($("#message").val()!='')){
+      if($("#message").val()!=''){
         const user = auth.currentUser;
         db.collection('users').doc(user.uid).get().then(doc => {
           $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
