@@ -48,6 +48,7 @@ logout.addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut();
     console.log('signout')
+    location.replace("https://jack34672.github.io/blog")
 });
 
 // signup
@@ -87,6 +88,7 @@ loginForm.addEventListener('submit', (e) =>{
         //console.log(cred.user);
         loginForm.reset();
         loginForm.querySelector('.error').innerHTML = '';
+        location.replace("https://jack34672.github.io/blog")
     }).catch(err => {
         loginForm.querySelector('.error').innerHTML = err.message;
     });
