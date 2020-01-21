@@ -62,6 +62,6 @@ const setupFeeds = (data) => {
       })
     });
   } else {
-    feedList.innerHTML = '<h3 style = "text-align: center;">登入才能看到塗鴉牆</h3>';
+    feedList.innerHTML = '<h3 style = "text-align: center;">請先登入才能留言/發文</h3>';
   }
 }
