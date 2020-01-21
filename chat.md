@@ -27,9 +27,9 @@ order: 5
         </div>
       </form>
     </div>
-    <div class="logged-in">
+    <div class="logged-out">
       <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以聊天哦</h4>
-    </div class="logged-in">
+    </div>
   <hr style="margin-top: 25px;">
   <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無對話</h4></div>
 </div>

@@ -2,6 +2,7 @@ const feedList = document.querySelector('.feeds');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
+const titleDetails = document.querySelector('.title-details');
 const adminItems = document.querySelectorAll('.admin');
 
 
@@ -18,13 +19,21 @@ const setupUI = (user) => {
         <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
       `;
       accountDetails.innerHTML = html;
+      const html2 = `
+        <h2 style="text-align: center; color: white;">
+          ${doc.data().user}，歡迎回來
+        </h2>
+      `;
+      titleDetails.innerHTML = html2;
     })
+
     //toggle UI elements
     loggedInLinks.forEach(item => item.style.display = 'block');
     loggedOutLinks.forEach(item => item.style.display = 'none');
   } else {
     // account info
     accountDetails.innerHTML = `<h1 id="title" href="/">廢文集散地</h1><p>@jack34672</p>`;
+    titleDetails.innerHTML = ``;
     adminItems.forEach(item => item.style.display = 'none');
     // toggle UI
     loggedOutLinks.forEach(item => item.style.display = 'block');
