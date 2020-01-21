@@ -65,6 +65,6 @@ const setupFeeds = (data) => {
       })
     });
   } else {
-    feedList.innerHTML = '<h5 class = "center-align">Login to view guides</h5>';
+    feedList.innerHTML = '<h3 style = "text-align: center;">登入才能看到塗鴉牆</h3>';
   }
 }
