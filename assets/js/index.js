@@ -52,14 +52,7 @@ const setupFeeds = (data) => {
               <div class="8u" style="padding: 0px; padding-left: 10px;">
                 <h3>${doc.data().user}</h3>
                 <h4 class="date" style="padding-left: 10px;">${feed.postedAt.toDate().toString().substring(4,21)}</h4>
-              </div>
-          </div>
-          <div class="row" style="margin-top: 5px;">
-              <div class="2u" style="padding: 0px;">
-                <p></p>
-              </div>
-              <div class="10u" style="padding: 0px;">
-                  <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
+                <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
               </div>
           </div>
         </section>
