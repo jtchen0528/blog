@@ -56,6 +56,7 @@ const setupFeeds = (data) => {
           </div>
           <div class="row" style="margin-top: 5px;">
               <div class="2u" style="padding: 0px;">
+                <p></p>
               </div>
               <div class="10u" style="padding: 0px;">
                   <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
