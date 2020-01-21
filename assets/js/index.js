@@ -46,10 +46,10 @@ const setupFeeds = (data) => {
         const li = `
         <section id="${feed.title}">
           <div class="row">
-              <div class="4u" style="padding: 0px; text-align: right;">
+              <div class="3u" style="padding: 0px; text-align: right;">
                 <img src="https://api.adorable.io/avatars/150/${doc.data().user}@adorable.io.png" style="border-radius: 10px; width: 100%; height: auto; max-width: 100px;"/>
               </div>
-              <div class="8u" style="padding: 0px; padding-left: 10px;">
+              <div class="9u" style="padding: 0px; padding-left: 10px;">
                 <h3>${doc.data().user}</h3>
                 <h4 class="date" style="padding-left: 10px;">${feed.postedAt.toDate().toString().substring(4,21)}</h4>
                 <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
