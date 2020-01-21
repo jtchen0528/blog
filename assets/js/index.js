@@ -44,19 +44,22 @@ const setupFeeds = (data) => {
         //console.log(doc.data().user)
         
         const li = `
-        <section id="${feed.title}" class="shade-three">
-          <div class="" style="max-width: 400px; margin: auto;">
-            <div class="row">
-              <div class="4u" style="padding: 0px;">
-                <img src="https://www.gravatar.com/avatar/${md5(doc.data().user)}?s=100&d=retro" style="width: 80px;  border-radius: 10px; height: auto; margin-left: 30px;"/>
+        <section id="${feed.title}">
+          <div class="row">
+              <div class="4u" style="padding: 0px; text-align: right;">
+                <img src="https://api.adorable.io/avatars/150/${doc.data().user}@adorable.io.png" style="border-radius: 10px; width: 100%; height: auto; max-width: 100px;"/>
               </div>
               <div class="8u" style="padding: 0px;">
-                <h4 style="padding-top: 10px; text-align:center; display: inline;">${doc.data().user}</h4>
-                <h5 class="date" style="text-align:center; display: inline; padding-top: 10px; padding-left: 5px;">${feed.postedAt.toDate().toString().substring(4,21)}</h5>
-                <h4 style="padding-top: 10px; display: inline;">：</h4>
-                <p style=" text-align: center; margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
+                <h3>${doc.data().user}</h3>
+                <h4 class="date" style="padding-left: 10px;">${feed.postedAt.toDate().toString().substring(4,21)}</h4>
               </div>
-            </div>
+          </div>
+          <div class="row" style="margin-top: 5px;">
+              <div class="2u" style="padding: 0px;">
+              </div>
+              <div class="10u" style="padding: 0px;">
+                  <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
+              </div>
           </div>
         </section>
         `;
