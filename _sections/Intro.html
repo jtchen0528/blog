@@ -93,11 +93,12 @@ $(function() {
             md5Email: doc.data().user,
             postedAt: Firebase.ServerValue.TIMESTAMP
           });
+          $("input[type=text], textarea").val("");
+          return false;
         });
       }
 
-      $("input[type=text], textarea").val("");
-      return false;
+
 
     });
 });
