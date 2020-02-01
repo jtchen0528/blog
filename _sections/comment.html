@@ -94,7 +94,9 @@ $(function() {
           
         });
       }
+      return false;
 
+    });
       $("#cover-form").submit(function() {
       if(($("#title").val()!='')&&($("#link").val()!='')){
         const user = auth.currentUser;
