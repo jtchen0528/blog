@@ -142,7 +142,7 @@ function escapeHtml(str) {
         setTimeout(function(){
             setupUI();
             setupFeeds([]);        
-        }, 1000);
+        }, 300);
     }
 
 </script>
