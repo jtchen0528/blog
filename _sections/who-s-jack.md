@@ -18,8 +18,8 @@ order: 2
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding: 30px; margin: 0px;">
           <b style="font-weight: bold;">Currently:</b><br>
-          studing @ NTHUEE<br>
-          working @ Logitech as an intern<br>
+          Studing @ NTHUEE<br>
+          Working @ Logitech as an intern<br>
           <b style="font-weight: bold;">Hobbies:</b><br>
           Musics(Taiwan indies), Guitar, Cats, Gaming, Web-designing.<br>
           <b style="font-weight: bold;">Visited:</b><br>
