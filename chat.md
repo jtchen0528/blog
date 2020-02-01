@@ -105,3 +105,50 @@ function escapeHtml(str) {
 }
 
 </script>
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+  apiKey: "AIzaSyCClEanlAW2spOZGMd5EYfwhSkNj_Piz5Y",
+  authDomain: "jack34672-f6932.firebaseapp.com",
+  databaseURL: "https://jack34672-f6932.firebaseio.com",
+  projectId: "jack34672-f6932",
+};
+  firebase.initializeApp(firebaseConfig);
+  
+  // make auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  const functions = firebase.functions();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true });
+</script>
+
+
+<script>
+
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin = idTokenResult.claims.admin;
+            setupUI(user);
+        })
+        // get data
+        db.collection('feeds').onSnapshot(snapshot => {
+            setupFeeds(snapshot.docs);
+        }, err => {
+            console.log(err.message)
+        })
+    } else {
+        setupUI();
+        setupFeeds([]);
+    }
+
+</script>
