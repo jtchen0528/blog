@@ -114,8 +114,8 @@ $(function() {
       return false;
 
     });
-      $("#cover-form").submit(function() {
-      if(($("#title").val()!='')&&($("#link").val()!='')){
+    $("#cover-form").submit(function() {
+      if(($("#title").val()!='')||($("#link").val()!='')){
         const user = auth.currentUser;
         db.collection('users').doc(user.uid).get().then(doc => {
           $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
@@ -137,7 +137,7 @@ $(function() {
 
       return false;
 
-    });
+  });
 });
 
 function slugify(text) {
