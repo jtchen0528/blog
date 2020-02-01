@@ -20,8 +20,44 @@ order: 1
     <div style="padding-top: 40px;">
       <h3  style="text-align: center; color: white;">帶我去找夜生活</h3>
       <iframe width="90%" height="160" src="https://clyp.it/ddwnlq12/widget" frameborder="0" style="margin: 20px;"></iframe>
-      <a href="#留言板" class="scrolly" style="padding: 20px 22px 20px 22px; background-color: #ffffff85;color: #00000065; border-radius: 100px;"><i class="icon fa-arrow-down"></i></a>
     </div>
+    <div class="admin">
+      <form id="cover-form" style="padding-left: 25px; padding-right: 25px;">
+        <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">上傳歌曲</h3>
+        <div class="row" style="margin-top: 10px;">
+          <div class="5u 12u$(mobile)" style="padding-left: 5px; padding-right: 5px;">
+            <input id="title" type="text" name="title" style=" padding: 10px; margin-top: 10px;" placeholder="歌名">
+          </div>
+          <div class="5u 12u$(mobile)" style="padding-left: 5px; padding-right: 5px;">
+            <input id="link" type="text" name="link" style=" padding: 10px; margin-top: 10px;" placeholder="clyp ID">
+          </div>
+          <div class="2u 12u$(mobile)" >
+            <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <a href="#留言板" class="scrolly" style="padding: 20px 22px 20px 22px; background-color: #ffffff85;color: #00000065; border-radius: 100px;"><i class="icon fa-arrow-down"></i></a>
+
   </div>
 </div>
 
+<script>
+
+const coverForm = document.querySelector('#cover-form');
+coverForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        //console.log(user);
+        db.collection('feeds').add({
+            title: coverForm['title'].value,
+            link: coverForm['link'].value,
+        }).then(() => {
+            // close modal and reset form
+            coverForm.reset();
+        }).catch(err => {
+            console.log(err.message);
+        })
+
+    })
+
+</script>
