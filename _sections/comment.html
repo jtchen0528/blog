@@ -37,6 +37,7 @@ order: 4
 $(function() {
   var ref = new Firebase("https://jack34672-f6932.firebaseio.com/"),
     postRef = ref.child(slugify(window.location.pathname));
+    postRefcover = ref.child(slugify(window.location.pathname + '/cover'));
     var commentnum = 0;
     postRef.on("child_added", function(snapshot) {
       var newPost = snapshot.val();
@@ -87,6 +88,27 @@ $(function() {
             name: doc.data().user,
             message: $("#message").val(),
             md5Email: doc.data().user,
+            postedAt: Firebase.ServerValue.TIMESTAMP
+          });
+          $("input[type=text], textarea").val("");
+          
+        });
+      }
+
+      $("#cover-form").submit(function() {
+      if(($("#title").val()!='')&&($("#link").val()!='')){
+        const user = auth.currentUser;
+        db.collection('users').doc(user.uid).get().then(doc => {
+          $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
+            {msg: doc.data().user + ' 新增了一首歌：' + $("#title").val()},
+            function(e){
+              console.log(e);
+          });
+          var a = postRefcover.push();
+          a.set({
+            name: doc.data().user,
+            title: $("#title").val(),
+            link: $("#link").val(),
             postedAt: Firebase.ServerValue.TIMESTAMP
           });
           $("input[type=text], textarea").val("");

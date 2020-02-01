@@ -18,10 +18,12 @@ order: 1
   </div>
     <hr>
     <div style="padding-top: 40px;">
-      <h3  style="text-align: center; color: white;">帶我去找夜生活</h3>
-      <iframe width="90%" height="160" src="https://clyp.it/ddwnlq12/widget" frameborder="0" style="margin: 20px;"></iframe>
+      <div>
+        <h3  style="text-align: center; color: white;">帶我去找夜生活</h3>
+        <iframe width="90%" height="160" src="https://clyp.it/ddwnlq12/widget" frameborder="0" style="margin: 20px;"></iframe>
+      </div>
     </div>
-    <div class="admin">
+    <div class="admin" style="display: none;">
       <form id="cover-form" style="padding-left: 25px; padding-right: 25px;">
         <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">上傳歌曲</h3>
         <div class="row" style="margin-top: 10px;">
@@ -41,23 +43,3 @@ order: 1
 
   </div>
 </div>
-
-<script>
-
-const coverForm = document.querySelector('#cover-form');
-coverForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        //console.log(user);
-        db.collection('feeds').add({
-            title: coverForm['title'].value,
-            link: coverForm['link'].value,
-        }).then(() => {
-            // close modal and reset form
-            coverForm.reset();
-        }).catch(err => {
-            console.log(err.message);
-        })
-
-    })
-
-</script>
