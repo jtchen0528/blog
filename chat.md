@@ -14,7 +14,7 @@ order: 5
 
 <div style="max-width: 700px; margin: auto;">
   <hr>
-    <div class="logged-in">
+    <div class="logged-in" style="display: none;">
       <form id="comment" style="padding-left: 25px; padding-right: 25px;">
         <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
         <div class="row" style="margin-top: 10px;">
