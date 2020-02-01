@@ -6,7 +6,7 @@ icon: fa-comment-dots
 order: 4
 ---
 
-<div id="modal-create" class="modal logged-in">
+<div id="modal-create" class="modal logged-in" style="display: none;"> 
     <div class="modal-content">
       <form id="feeds-form">
         <div class="input-field">
@@ -24,6 +24,32 @@ order: 4
 <div class="feeds">
 
 </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+  apiKey: "AIzaSyCClEanlAW2spOZGMd5EYfwhSkNj_Piz5Y",
+  authDomain: "jack34672-f6932.firebaseapp.com",
+  databaseURL: "https://jack34672-f6932.firebaseio.com",
+  projectId: "jack34672-f6932",
+};
+  firebase.initializeApp(firebaseConfig);
+  
+  // make auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  const functions = firebase.functions();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true });
+</script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
 <script>
@@ -47,4 +73,23 @@ order: 4
         })
 
     })
+
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin = idTokenResult.claims.admin;
+            setupUI(user);
+        })
+        // get data
+        db.collection('feeds').onSnapshot(snapshot => {
+            setupFeeds(snapshot.docs);
+        }, err => {
+            console.log(err.message)
+        })
+    } else {
+        setupUI();
+        setupFeeds([]);
+    }
+
 </script>
