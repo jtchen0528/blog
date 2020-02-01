@@ -23,6 +23,25 @@ auth.onAuthStateChanged(user =>{
     }
 })
 
+var user = firebase.auth().currentUser;
+
+if (user) {
+    user.getIdTokenResult().then(idTokenResult => {
+        user.admin = idTokenResult.claims.admin;
+        setupUI(user);
+    })
+    // get data
+    db.collection('feeds').onSnapshot(snapshot => {
+        setupFeeds(snapshot.docs);
+    }, err => {
+        console.log(err.message)
+    })
+} else {
+    setupUI();
+    setupFeeds([]);
+}
+
+
 // create new guides
 // const createForm = document.querySelector('#create-form');
 // createForm.addEventListener('submit', (e) => {
