@@ -120,14 +120,6 @@ function escapeHtml(str) {
   projectId: "jack34672-f6932",
 };
   firebase.initializeApp(firebaseConfig);
-  
-  // make auth and firestore references
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-  const functions = firebase.functions();
-
-  // update firestore settings
-  db.settings({ timestampsInSnapshots: true });
 </script>
 
 
@@ -147,8 +139,10 @@ function escapeHtml(str) {
             console.log(err.message)
         })
     } else {
-        setupUI();
-        setupFeeds([]);
+        setTimeout(function(){
+            setupUI();
+            setupFeeds([]);        
+        }, 1000);
     }
 
 </script>
