@@ -8,6 +8,10 @@ const adminItems = document.querySelectorAll('.admin');
 
 const setupUI = (user) => {
   if (user) {
+    
+    loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'none');
+
     // account info
     if(user.admin){
       adminItems.forEach(item => item.style.display = 'block');
@@ -28,8 +32,7 @@ const setupUI = (user) => {
     })
 
     //toggle UI elements
-    loggedInLinks.forEach(item => item.style.display = 'block');
-    loggedOutLinks.forEach(item => item.style.display = 'none');
+
   } else {
     // account info
     adminItems.forEach(item => item.style.display = 'none');
