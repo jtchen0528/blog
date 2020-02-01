@@ -87,8 +87,12 @@ order: 4
             console.log(err.message)
         })
     } else {
-        setupUI();
-        setupFeeds([]);
+        setTimeout(function(){
+            setupUI();
+            setupFeeds([]);        
+        }, 1500);
+
+
     }
 
 </script>
