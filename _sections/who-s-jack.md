@@ -17,14 +17,14 @@ order: 2
   <div class="7u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding: 30px; margin: 0px;">
-          <b>Currently:</b><br>
+          <b style="font-weight: bold;">Currently:</b><br>
           studing @ NTHUEE<br>
           working @ Logitech as an intern<br>
-          <b>Hobbies:</b><br>
+          <b style="font-weight: bold;">Hobbies:</b><br>
           Musics(Taiwan indies), Guitar, Cats, Gaming, Web-designing.<br>
-          <b>Visited:</b><br>
+          <b style="font-weight: bold;">Visited:</b><br>
           Japan, US, Canada, Singapore, Philippines, Tailand, Malaysia.<br>
-          <b>Most meaningful thing that I've done:</b><br>
+          <b style="font-weight: bold;">Most meaningful thing that I've done:</b><br>
           考75級
           <br>
         </p>
