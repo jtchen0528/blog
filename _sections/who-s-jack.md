@@ -16,7 +16,7 @@ order: 2
   </div>
   <div class="7u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
-        <p style="text-align: left; padding: 30px; margin: 0px;">
+        <p style="text-align: left; padding:0px 30px; margin: 0px;">
           <b style="font-weight: bold;">Currently:</b><br>
           Studing @ NTHUEE<br>
           Working @ Logitech as an intern<br>
