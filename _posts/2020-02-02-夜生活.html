@@ -95,10 +95,6 @@ $(function() {
             '<h4 style="padding-top: 10px; display: inline;">：</h4>' +
           '<p style=" margin-bottom: 0px; font-size: 1.35em;">' + escapeHtml(newPost.message)  + '</p>' +
           '</div></div></div>');
-      if(commentnum==0){
-        $(".nocomments").remove();
-      }
-            commentnum++;
     });
 
     $("#comment").submit(function() {
