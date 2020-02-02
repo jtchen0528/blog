@@ -90,12 +90,6 @@ categories: [Military]
 		  projectId: "jack34672-f6932",
 		};
     firebase.initializeApp(firebaseConfig);
-		  const auth = firebase.auth();
-		  const db = firebase.firestore();
-		  const functions = firebase.functions();
-	  
-		  // update firestore settings
-		  db.settings({ timestampsInSnapshots: true });
 </script>
 <script src="/blog/assets/js/auth.js"></script>
 <script src="/blog/assets/js/index.js"></script>
@@ -128,11 +122,7 @@ $(function() {
             '<h4 style="padding-top: 10px; display: inline;">：</h4>' +
           '<p style=" margin-bottom: 0px; font-size: 1.35em;">' + escapeHtml(newPost.message)  + '</p>' +
           '</div></div></div>');
-      if(commentnum==0){
-        $(".nocomments").remove();
-      }
-            commentnum++;
-    });
+
 
     $("#comment").submit(function() {
       if($("#message").val()!=''){
