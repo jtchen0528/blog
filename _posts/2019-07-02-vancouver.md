@@ -444,13 +444,14 @@ body {
 <br>
 <!-- 留言板 -->
 
+
 <div>
 	<h3 style="text-align: center; padding-top: 30px;">留言板</h3>
 </div>
 
 <div style="max-width: 700px; margin: auto;">
 <hr>
-  <div class="logged-in" style="display: none;">
+  <div class="logged-in">
     <form id="comment" style="padding-left: 25px; padding-right: 25px;">
       <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
       <div class="row" style="margin-top: 10px;">
@@ -463,7 +464,7 @@ body {
       </div>
     </form>
   </div>
-  <div class="logged-out"  style="display: none;">
+  <div class="logged-out">
     <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以留言哦</h4>
   </div>
 <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無留言</h4></div>
@@ -484,16 +485,55 @@ body {
 		  databaseURL: "https://jack34672-f6932.firebaseio.com",
 		  projectId: "jack34672-f6932",
 		};
-    firebase.initializeApp(firebaseConfig);
-		  const auth = firebase.auth();
-		  const db = firebase.firestore();
-		  const functions = firebase.functions();
-	  
-		  // update firestore settings
-		  db.settings({ timestampsInSnapshots: true });
-</script>
-<script src="/blog/assets/js/auth.js"></script>
-<script src="/blog/assets/js/index.js"></script>
+      firebase.initializeApp(firebaseConfig);
+      
+      const logout = document.querySelector('#logout');
+      logout.addEventListener('click', (e) => {
+          e.preventDefault();
+          auth.signOut();
+          console.log('signout')
+          location.replace("https://jack34672.github.io/blog")
+      });
+
+      const loggedOutLinks = document.querySelectorAll('.logged-out');
+      const loggedInLinks = document.querySelectorAll('.logged-in');
+      const accountDetails = document.querySelector('.account-details');
+      const titleDetails = document.querySelector('.title-details');
+		  firebase.auth().onAuthStateChanged(user =>{
+        if(user){
+            //console.log('user logged in: ', user);
+            user.getIdTokenResult().then(idTokenResult => {
+                user.admin = idTokenResult.claims.admin;
+                loggedInLinks.forEach(item => item.style.display = 'block');
+                loggedOutLinks.forEach(item => item.style.display = 'none');
+
+                // account info
+                db.collection('users').doc(user.uid).get().then(doc => {
+                  const html = `
+                    <h1 id="title">${doc.data().user}</h1>
+                    <p>${user.email}</p>
+                    <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
+                  `;
+                  accountDetails.innerHTML = html;
+                  const html2 = `
+                    <h2 style="text-align: center; color: white;">
+                      ${doc.data().user}，歡迎回來
+                    </h2>
+                  `;
+                  titleDetails.innerHTML = html2;
+                })
+            })
+        } else { 
+            //console.log('user logged out.');
+            loggedOutLinks.forEach(item => item.style.display = 'block');
+            loggedInLinks.forEach(item => item.style.display = 'none');
+            accountDetails.innerHTML = `<h1 id="title" href="/">廢文集散地</h1><p>@jack34672</p>`;
+            titleDetails.innerHTML = ``;
+        }
+    })
+		</script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/index.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
@@ -531,7 +571,7 @@ $(function() {
 
     $("#comment").submit(function() {
       if($("#message").val()!=''){
-        const user =  auth.currentUser;
+        const user =  firebase.auth().currentUser;
         db.collection('users').doc(user.uid).get().then(doc => {
           $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
             {msg: doc.data().user + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
@@ -570,3 +610,5 @@ function escapeHtml(str) {
 }
 
 </script>
+
+<!-- 留言板 -->
