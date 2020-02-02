@@ -89,10 +89,20 @@ categories: [Military]
 		  projectId: "jack34672-f6932",
 		};
     firebase.initializeApp(firebaseConfig);
-
+		  const auth = firebase.auth();
+		  const db = firebase.firestore();
+		  const functions = firebase.functions();
+	  
+		  // update firestore settings
+		  db.settings({ timestampsInSnapshots: true });
 </script>
 <script src="/blog/assets/js/auth.js"></script>
 <script src="/blog/assets/js/index.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script> $(".click").click(function(){ $(".expand").slideToggle(); }); </script>
+
 
 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -125,7 +135,7 @@ $(function() {
 
     $("#comment").submit(function() {
       if($("#message").val()!=''){
-        const user = firebase.auth().currentUser;
+        const user =  auth.currentUser;
         db.collection('users').doc(user.uid).get().then(doc => {
           $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
             {msg: doc.data().user + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
