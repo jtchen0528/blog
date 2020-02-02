@@ -55,23 +55,50 @@ categories: [Military]
 
 <div style="max-width: 700px; margin: auto;">
 <hr>
-<div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無留言</h4></div>
-  <form id="comment" style="padding-left: 10px; padding-right: 10px;">
-  	<hr style="margin-top: 25px;">
-    <h3 style="text-align: center; padding-top: 30px; padding-bottom: 10px;">留個言ㄅ</h3>
-    <div class="row" style="margin-top: 10px;">
-        <div class="4u" style="padding-left: 5px; padding-right: 5px;">
-          <input type="text" id="name" placeholder="暱稱">
+  <div class="logged-in" style="display: none;">
+    <form id="comment" style="padding-left: 25px; padding-right: 25px;">
+      <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
+      <div class="row" style="margin-top: 10px;">
+        <div class="10u" style="padding-left: 5px; padding-right: 5px;">
+          <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="想說什麼">
         </div>
-        <div class="6u" style="padding-left: 5px; padding-right: 5px;">
-          <input id="message" type="text" placeholder="想說什麼">
+        <div class="2u" >
+          <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
         </div>
-        <div class="2u" style="padding-left: 5px;padding-right: 5px;text-align: center;background-color: #8ebebc;border-radius: 10px;">
-          <input type="submit" value="留言" style="padding: 10px;margin: 0 auto;display: block;background-image: none;background-color: #8ebebc;">
-        </div>
-    </div>
-  </form>
+      </div>
+    </form>
   </div>
+  <div class="logged-out"  style="display: none;">
+    <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以留言哦</h4>
+  </div>
+<div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無留言</h4></div>
+
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+	  
+<script>
+		  // Initialize Firebase
+		  var firebaseConfig = {
+		  apiKey: "AIzaSyCClEanlAW2spOZGMd5EYfwhSkNj_Piz5Y",
+		  authDomain: "jack34672-f6932.firebaseapp.com",
+		  databaseURL: "https://jack34672-f6932.firebaseio.com",
+		  projectId: "jack34672-f6932",
+		};
+    firebase.initializeApp(firebaseConfig);
+		  const auth = firebase.auth();
+		  const db = firebase.firestore();
+		  const functions = firebase.functions();
+	  
+		  // update firestore settings
+		  db.settings({ timestampsInSnapshots: true });
+</script>
+<script src="/blog/assets/js/auth.js"></script>
+<script src="/blog/assets/js/index.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
@@ -93,7 +120,7 @@ $(function() {
       $(".comments").prepend('<div class="comment" style="max-width: 400px; margin: auto;">' +
           '<div class="row">'+
           '<div class="4u" style="padding: 0px;">' + 
-          '<img src="https://www.gravatar.com/avatar/' + escapeHtml(newPost.md5Email) + '?s=100&d=retro" style="width: 80px; border-radius: 10px; height: auto; margin-left: 30px;"/> ' + 
+          '<img src="https://api.adorable.io/avatars/150/' + escapeHtml(newPost.md5Email) + '@adorable.io.png" style="width: 80px; border-radius: 10px; height: auto; margin-left: 30px;"/> ' + 
           '</div>'+
           '<div class="8u" style="padding: 0px;">' + 
             '<h4 style="padding-top: 10px; text-align:center; display: inline;">' + escapeHtml(newPost.name) + '</h4>' +
@@ -108,23 +135,28 @@ $(function() {
     });
 
     $("#comment").submit(function() {
-      if(($("#name").val()!='')&&($("#message").val()!='')){
-      $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
-        {msg:$("#name").val() + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
-        function(e){
-          console.log(e);
-      });
-      var a = postRef.push();
-      a.set({
-        name: $("#name").val(),
-        message: $("#message").val(),
-        md5Email: md5($("#name").val()),
-        postedAt: Firebase.ServerValue.TIMESTAMP
-      });
+      if($("#message").val()!=''){
+        const user =  firebase.auth().currentUser;
+        db.collection('users').doc(user.uid).get().then(doc => {
+          $.post('https://script.google.com/macros/s/AKfycbzNV6XM5rSNEWYgt22-3r5kwHCyKE9WToFMND47cPnTyRBZIasI/exec',
+            {msg: doc.data().user + ' 回覆了你在 ' + window.location.pathname + ' 的貼文，留言內容：' + $("#message").val()},
+            function(e){
+              console.log(e);
+          });
+          var a = postRef.push();
+          a.set({
+            name: doc.data().user,
+            message: $("#message").val(),
+            md5Email: doc.data().user,
+            postedAt: Firebase.ServerValue.TIMESTAMP
+          });
+          $("input[type=text], textarea").val("");
+          
+        });
       }
 
-      $("input[type=text], textarea").val("");
       return false;
+
     });
 });
 
