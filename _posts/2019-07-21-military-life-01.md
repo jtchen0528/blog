@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 當兵心得──前10天
+title: 當兵前10天
 subtitle: 在桃園凌雲崗的受訓垃圾日子
 author: Jack
 icon: fa-fighter-jet

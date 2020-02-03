@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 當兵心得──低能兒&&記事
+title: 當兵低能兒記事
 subtitle: 在桃園凌雲崗的受訓垃圾日子
 author: Jack
 icon: fa-fighter-jet
