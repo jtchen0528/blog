@@ -4,7 +4,7 @@ title: 當兵心得──低能同梯
 subtitle: 在桃園凌雲崗的受訓垃圾日子
 author: Jack
 icon: fa-fighter-jet
-categories: [Military]
+categories: [Diary]
 ---
 
 當兵其中一個心得就是，怎麼明明只差一歲或沒差，居然有人能那麼幼稚低能＝＝。

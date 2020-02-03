@@ -4,7 +4,7 @@ title: 當兵心得──前10天
 subtitle: 在桃園凌雲崗的受訓垃圾日子
 author: Jack
 icon: fa-fighter-jet
-categories: [Military]
+categories: [Diary]
 ---
 
 來記錄一下我當兵前10天的心得ㄅ。簡單來說就是又熱又無聊。

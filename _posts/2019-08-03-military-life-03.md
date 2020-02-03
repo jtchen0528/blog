@@ -4,7 +4,7 @@ title: 當兵心得──低能兒&&記事
 subtitle: 在桃園凌雲崗的受訓垃圾日子
 author: Jack
 icon: fa-fighter-jet
-categories: [Military]
+categories: [Diary]
 ---
 
 這週訓練量異常的多，因為快要鑑測了，像星期二就拿著+刺刀快5kg的65K2揮了六七個小時，每天都是在烈日下臥倒匍匐、刺槍、打掃的日子。
