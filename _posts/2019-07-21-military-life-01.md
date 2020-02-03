@@ -134,7 +134,7 @@ categories: [Military]
             //console.log('user logged out.');
             loggedOutLinks.forEach(item => item.style.display = 'block');
             loggedInLinks.forEach(item => item.style.display = 'none');
-            accountDetails.innerHTML = `<h1 id="title" href="/">廢文集散地</h1><p>@jack34672</p>`;
+            accountDetails.innerHTML = `<h1 id="title" href="/">兆廷的blog</h1><p>@jack34672</p>`;
             titleDetails.innerHTML = ``;
         }
     })
