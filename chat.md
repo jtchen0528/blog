@@ -4,6 +4,7 @@ subtitle: 想即時聊天都可以ㄛ
 icon: fa-comments
 permalink: /chat
 order: 5
+hide: true
 ---
 
 <!-- 留言板 -->
