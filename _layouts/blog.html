@@ -38,9 +38,9 @@ layout: default
 		{%- capture _subtitle -%}
 			{% if _post.author -%}{{- _post.author }} | {% endif %}
 			{{- _post.date | date_to_long_string -}}
-			{{- _post.content | truncatewords: 100 -}}
+			{{- _post.excerpt | truncatewords: 100 -}}
 		{%- endcapture -%}
-		{{ _post.content | split:'<!--break-->' | first }}
+		{{ _post.cexcerpt | split:'<!--break-->' | first }}
 		{%- capture _excerpt -%}<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
 		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
