@@ -3,7 +3,7 @@ layout: post
 title: 托福105分教學
 subtitle: 我怎麼準備托福的
 author: Jhao-Ting Chen
-icon: fa-apple-alt
+icon: fa-graduation-cap
 categories: [Articles]
 comment: true
 ---
