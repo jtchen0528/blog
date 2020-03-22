@@ -27,7 +27,7 @@ comment: true
 <h3>各部分練習方法</h3>
 <p>
 首先先介紹我的資源，我有某補習班的TPO講義，基本上就是TPO考題但他把同類型的題目放在一起，基本上就跟一般的TPO一樣。<br>
-再來，有個網站叫[威學一百](http://t.weixue100.com/toefl/default/guest)，很方便，有全套TPO的考題，還可以模擬考。<br>
+再來，有個網站叫<a href="http://t.weixue100.com/toefl/default/guest">威學一百</a>，很方便，有全套TPO的考題，還可以模擬考。<br>
 </p>
 <dl>
 	<dt>Reading</dt>
