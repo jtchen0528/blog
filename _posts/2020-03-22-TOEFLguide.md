@@ -215,11 +215,39 @@ comment: true
 </p>
 
 
+<!-- 留言板 -->
+
+
+<div>
+	<h3 style="text-align: center; padding-top: 30px;">留言板</h3>
+</div>
+
+<div style="max-width: 700px; margin: auto;">
+<hr>
+  <div class="logged-in">
+    <form id="comment" style="padding-left: 25px; padding-right: 25px;">
+      <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
+      <div class="row" style="margin-top: 10px;">
+        <div class="9u" style="padding-left: 5px; padding-right: 5px;">
+          <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="想說什麼">
+        </div>
+        <div class="3u" >
+          <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="logged-out">
+    <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以留言哦</h4>
+  </div>
+<div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無留言</h4></div>
+
+</div>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
-	  
+
 <script>
 		  // Initialize Firebase
 		  var firebaseConfig = {
@@ -270,7 +298,7 @@ comment: true
             //console.log('user logged out.');
             loggedOutLinks.forEach(item => item.style.display = 'block');
             loggedInLinks.forEach(item => item.style.display = 'none');
-            accountDetails.innerHTML = `<h1 id="title" href="/">廢文集散地</h1><p>@jack34672</p>`;
+            accountDetails.innerHTML = `<h1 id="title" href="/">兆廷的blog</h1><p>@jack34672</p>`;
             titleDetails.innerHTML = ``;
         }
     })
@@ -278,10 +306,8 @@ comment: true
 <script src="assets/js/auth.js"></script>
 <script src="assets/js/index.js"></script>
 
-
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 <script> $(".click").click(function(){ $(".expand").slideToggle(); }); </script>
-
 
 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
