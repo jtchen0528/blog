@@ -11,7 +11,7 @@ comment: true
 <h2>分數：105</h2>
 <h3>閱讀29/聽力27/口說23/寫作26</h3>
 
-<img style="max-width: 100%; height: auto;" src="https://i.imgur.com/XNiTMAG.jpg"><br>
+<img style="max-width: 80%; height: auto;" src="https://i.imgur.com/XNiTMAG.jpg"><br>
 
 <hr />
 
