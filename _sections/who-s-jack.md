@@ -28,7 +28,7 @@ order: 2
           <b style="font-weight: bold;">Visited:</b><br>
           Japan, US, Canada, Singapore, Philippines, Tailand, Malaysia.<br>
         </p>
-        <a href="assets/files/Jhao_Ting_Chen_CV.html">Click to view my CV</a>
+        <a href="assets/files/Jhao_Ting_Chen_CV.html" style = "padding: 15px;">Click to view my CV</a>
     </div>
   </div>
 </div>
