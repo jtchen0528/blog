@@ -18,15 +18,15 @@ order: 2
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding:0px 30px; margin: 0px;">
           <b style="font-weight: bold;">Currently:</b><br>
-          Studing @ NTHUEE<br>
-          Working @ Logitech as an intern<br>
+          Studing @ NTHU EE<br>
+          Working @ Microsoft intern program<br>
+          <b style="font-weight: bold;">Former:</b><br>
+          Worked @ Logitech spring intern, Picture Analysis & System Development<br>
+          Studied @ CKSH<br>
           <b style="font-weight: bold;">Hobbies:</b><br>
           Musics(Taiwan indies), Guitar, Cats, Gaming, Web-designing.<br>
           <b style="font-weight: bold;">Visited:</b><br>
           Japan, US, Canada, Singapore, Philippines, Tailand, Malaysia.<br>
-          <b style="font-weight: bold;">Most meaningful thing that I've done:</b><br>
-          考75級
-          <br>
         </p>
     </div>
   </div>
