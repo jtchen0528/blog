@@ -28,6 +28,7 @@ order: 2
           <b style="font-weight: bold;">Visited:</b><br>
           Japan, US, Canada, Singapore, Philippines, Tailand, Malaysia.<br>
         </p>
+        <a href="assets/files/Jhao_Ting_Chen_CV.html">CV</a>
     </div>
   </div>
 </div>
