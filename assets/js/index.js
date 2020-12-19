@@ -39,7 +39,7 @@ const setupUI = (user) => {
     // toggle UI
     loggedOutLinks.forEach(item => item.style.display = 'block');
     loggedInLinks.forEach(item => item.style.display = 'none');
-    accountDetails.innerHTML = `<h1 id="title" href="/">兆廷的blog</h1><p>@jack34672</p>`;
+    accountDetails.innerHTML = `<h1 id="title" href="/">Jack's Blog</h1><p>@jtchen0528</p>`;
     titleDetails.innerHTML = ``;
   }
 }

@@ -1,19 +1,19 @@
-title: 兆廷的blog
-subtitle: jack34672
+title: Jack's Blog
+subtitle: jtchen0528
 description: Pro procrastinator
 
 author: Jack Chen
-email: jack34672@gmail.com
+email: jtchen0528@gmail.com
 avatar: assets/images/avatar.jpg
 
 baseurl: "/blog"
-url: "https://jack34672.github.io"
+url: "https://jtchen0528.github.io"
 
 # Social settings
-facebook_url: https://www.facebook.com/jack34672.tw
-instagram_url: https://www.instagram.com/jack34672
-github_url: https://github.com/jack34672
-linkedin_url: https://www.linkedin.com/in/jack34672/
+facebook_url: https://www.facebook.com/jtchen0528
+instagram_url: https://www.instagram.com/jtchen0528
+github_url: https://github.com/jtchen0528
+linkedin_url: https://www.linkedin.com/in/jtchen0528/
 
 
 # Build settings
@@ -25,4 +25,4 @@ plugins:
 # Necessary for Prologue theme:
 collections: [sections]
 
-google_analytics: UA-137821098-2
+google_analytics: G-6VE995W3K8
