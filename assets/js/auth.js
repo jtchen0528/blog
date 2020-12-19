@@ -86,7 +86,7 @@ signupForm.addEventListener('submit', (e) =>{
         // const modal = document.querySelector('#modal-signup');
         // M.Modal.getInstance(modal).close();
         signupForm.reset();
-        signupForm.querySelector('.error').innerHTML = '';
+        signupForm.querySelector('.error').innerHTML = '創帳號成功，已登入。';
     }).catch(err => {
         signupForm.querySelector('.error').innerHTML = err.message;
     });
