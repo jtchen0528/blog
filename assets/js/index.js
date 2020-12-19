@@ -2,6 +2,7 @@ const feedList = document.querySelector('.feeds');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelector('.account-details');
+const accountAvatar = document.querySelector('.avatar48');
 const titleDetails = document.querySelector('.title-details');
 const adminItems = document.querySelectorAll('.admin');
 
@@ -17,16 +18,16 @@ const setupUI = (user) => {
       adminItems.forEach(item => item.style.display = 'block');
     }
     db.collection('users').doc(user.uid).get().then(doc => {
-      console.log(doc.data())
       const html = `
         <h1 id="title">${doc.data().user}</h1>
         <p>${user.email}</p>
         <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
       `;
       const avatar48 = `
-        <img src="https://avatars.dicebear.com/api/jdenticon/` + doc.data().user + `.svg" alt="Avatar of Jack Chen">
+        <img src="https://avatars.dicebear.com/api/jdenticon/` + user.email + `.svg" alt="Avatar of Jack Chen">
       `
       accountDetails.innerHTML = html;
+      accountAvatar.innerHTML = avatar48;
       const html2 = `
         <h2 style="text-align: center; color: white;">
           ${doc.data().user}，歡迎回來
