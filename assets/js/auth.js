@@ -83,8 +83,8 @@ signupForm.addEventListener('submit', (e) =>{
             user: signupForm['signup-user'].value
         });
     }).then(() => {
-        const modal = document.querySelector('#modal-signup');
-        M.Modal.getInstance(modal).close();
+        // const modal = document.querySelector('#modal-signup');
+        // M.Modal.getInstance(modal).close();
         signupForm.reset();
         signupForm.querySelector('.error').innerHTML = '';
     }).catch(err => {
