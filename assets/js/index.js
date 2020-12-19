@@ -17,11 +17,15 @@ const setupUI = (user) => {
       adminItems.forEach(item => item.style.display = 'block');
     }
     db.collection('users').doc(user.uid).get().then(doc => {
+      console.log(doc.data())
       const html = `
         <h1 id="title">${doc.data().user}</h1>
         <p>${user.email}</p>
         <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
       `;
+      const avatar48 = `
+        <img src="https://avatars.dicebear.com/api/jdenticon/` + doc.data().user + `.svg" alt="Avatar of Jack Chen">
+      `
       accountDetails.innerHTML = html;
       const html2 = `
         <h2 style="text-align: center; color: white;">
