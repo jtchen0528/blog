@@ -8,149 +8,204 @@
 
 
 <url>
-  <loc>https://jack34672.github.io/blog/</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/account</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/account</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/articles</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/articles</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/feeds</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/gallery</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/assets/files/106000147-106061146.html</loc>
-  <lastmod>2020-02-04T18:07:45+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/feeds</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/categories</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/assets/files/Jhao_Ting_Chen_CV.html</loc>
+  <lastmod>2020-12-19T12:29:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/categories</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/CS343100.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/08/21/RollinOn.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EE223002.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/08/21/%E5%AE%89%E5%B9%B3%E4%B9%8B%E5%85%89.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EE231002.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/08/18/%E4%BD%A0%E6%98%AF%E6%88%91%E6%9C%80%E6%84%9A%E8%A0%A2%E7%9A%84%E4%B8%80%E6%AC%A1%E6%B5%AA%E6%BC%AB.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EE323000.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/08/18/%E5%A4%A7%E5%AE%B6%E9%83%BD%E5%94%BE%E6%A3%84%E3%84%89%E4%BD%8E%E8%83%BD%E5%A9%90%E6%84%9B%E3%84%8B.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EE323500.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/08/18/%E7%84%A1%E9%97%9C%E6%8B%AF%E6%95%91%E7%9A%84%E4%BA%8B.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EE370000.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/07/07/EE3980.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EECS204002.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/diary/2020/07/07/logitech.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/EECS302002.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/07/02/EE2405.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/GE139400.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/04/05/%E9%83%AD%E9%A0%82.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/nthu/2020/02/04/GEC120201.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/articles/2020/03/22/TOEFLguide.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2020/02/04/%E5%AE%89%E4%B9%9D.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/CS343100.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2020/02/04/%E9%82%A3%E4%BA%9B%E5%A4%B1%E7%9C%A0%E7%9A%84%E5%A4%9C%E8%88%87%E9%9B%A3%E4%BB%A5%E5%BF%98%E6%87%B7%E7%9A%84%E4%BA%8B.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EE223002.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2020/02/03/%E7%B4%85.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EE231002.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2020/02/03/%E9%A9%95%E5%82%B2%E7%9A%84%E9%AF%A8%E9%AD%9A.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EE323000.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2020/02/02/%E5%A4%9C%E7%94%9F%E6%B4%BB.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EE323500.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/guitar/2019/08/18/guitar.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EE370000.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/diary/2019/08/03/military-life-03.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EECS204002.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/diary/2019/07/27/military-life-02.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/EECS302002.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/diary/2019/07/21/military-life-01.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/GE139400.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/articles/2019/07/02/vancouver.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/nthu/2020/02/04/GEC120201.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/articles/2019/06/28/hackintosh.html</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/02/04/%E5%AE%89%E4%B9%9D.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/blog/chat</loc>
-  <lastmod>2020-02-04T18:07:50+00:00</lastmod>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/02/04/%E9%82%A3%E4%BA%9B%E5%A4%B1%E7%9C%A0%E7%9A%84%E5%A4%9C%E8%88%87%E9%9B%A3%E4%BB%A5%E5%BF%98%E6%87%B7%E7%9A%84%E4%BA%8B.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://jack34672.github.io/lora/</loc>
-  <lastmod>2020-01-14T08:28:53+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/02/03/%E7%B4%85.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/02/03/%E9%A9%95%E5%82%B2%E7%9A%84%E9%AF%A8%E9%AD%9A.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/guitar/2020/02/02/%E5%A4%9C%E7%94%9F%E6%B4%BB.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/guitar/2019/08/18/guitar.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/diary/2019/08/03/military-life-03.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/diary/2019/07/27/military-life-02.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/diary/2019/07/21/military-life-01.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/articles/2019/07/02/vancouver.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/articles/2019/06/28/hackintosh.html</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/chat</loc>
+  <lastmod>2020-12-19T12:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jtchen0528.github.io/blog/assets/files/Jhao_Ting_Chen_CV.pdf</loc>
+  <lastmod>2020-12-19T12:29:20+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
