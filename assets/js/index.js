@@ -59,7 +59,7 @@ const setupFeeds = (data) => {
         <section id="${feed.title}">
           <div class="row">
               <div class="3u" style="padding: 0px; text-align: right;">
-                <img src="https://avatars.dicebear.com/api/initials/${doc.data().user}.svg" style="border-radius: 10px; width: 100%; height: auto; max-width: 100px;"/>
+                <img src="https://avatars.dicebear.com/api/jdenticon/${doc.data().user}.svg" style="border-radius: 10px; width: 100%; height: auto; max-width: 100px;"/>
               </div>
               <div class="9u" style="padding: 0px; padding-left: 10px;">
                 <h4>${doc.data().user}&nbsp;在&nbsp;${feed.postedAt.toDate().toString().substring(4,21)}&nbsp;時說：</h4>
