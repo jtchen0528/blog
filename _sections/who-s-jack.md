@@ -10,7 +10,7 @@ order: 2
   <div class="5u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <a  class="image fit">
-        <img style="border-radius: 100%; max-height: 16em; max-width: 16em; margin: auto;" src="assets/images/avatar.jpg" alt="Me" />
+        <img style="border-radius: 100%; max-height: 12em; max-width: 12em; margin: auto;" src="assets/images/avatar.jpg" alt="Me" />
         </a>
     </div>
   </div>
