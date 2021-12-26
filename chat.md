@@ -1,6 +1,6 @@
 ---
-title: 聊天室
-subtitle: 想即時聊天都可以ㄛ
+title: Chat
+subtitle: say anything!
 icon: fa-comments
 permalink: /chat
 order: 5
@@ -10,29 +10,29 @@ hide: true
 <!-- 留言板 -->
 
 <div>
-	<h2 style="text-align: center; padding-top: 30px;">聊天室</h2>
+	<h2 style="text-align: center; padding-top: 30px;">Real-time chat room</h2>
 </div>
 
 <div style="max-width: 700px; margin: auto;">
   <hr>
     <div class="logged-in" style="display: none;">
       <form id="comment" style="padding-left: 25px; padding-right: 25px;">
-        <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
+        <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">Say something</h3>
         <div class="row" style="margin-top: 10px;">
           <div class="9u" style="padding-left: 5px; padding-right: 5px;">
-            <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="想說什麼">
+            <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="What's on your mind?">
           </div>
           <div class="3u" >
-            <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
+            <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">send</button>
           </div>
         </div>
       </form>
     </div>
     <div class="logged-out">
-      <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以聊天哦</h4>
+      <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">Login to chat</h4>
     </div>
   <hr style="margin-top: 25px;">
-  <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無對話</h4></div>
+  <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">no messages yet.</h4></div>
 </div>
 
 
