@@ -2,28 +2,28 @@
 
 <div id = "main">
   <div>
-    <h3 style="text-align: center; padding-top: 30px;">留言板</h3>
+    <h3 style="text-align: center; padding-top: 30px;">Comments</h3>
   </div>
 
   <div style="max-width: 700px; margin: auto;">
   <hr>
     <div class="logged-in">
       <form id="comment" style="padding-left: 25px; padding-right: 25px;">
-        <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">留個言ㄅ</h3>
+        <h3 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">Say something</h3>
         <div class="row" style="margin-top: 10px;">
           <div class="9u" style="padding-left: 5px; padding-right: 5px;">
-            <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="想說什麼">
+            <input id="message" type="text" name="message" style=" padding: 10px; margin-top: 10px;" placeholder="What's on your mind?">
           </div>
           <div class="3u" style="text-align-last: center;">
-            <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">送出</button>
+            <button type="submit" style="font-size: 20px; padding: 10px; margin-top: 10px;">send</button>
           </div>
         </div>
       </form>
     </div>
     <div class="logged-out">
-      <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">登入殼以留言哦</h4>
+      <h4 style="text-align: center; padding-top: 60px; padding-bottom: 10px;">Log-in to make comments</h4>
     </div>
-  <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">尚無留言</h4></div>
+  <div class="comments"><h4 class="nocomments" style="text-align: center; padding-top: 20px;">no comments yet</h4></div>
 
   </div>
 </div>
@@ -67,12 +67,12 @@
                   const html = `
                     <h1 id="title">${doc.data().user}</h1>
                     <p>${user.email}</p>
-                    <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
+                    <p style="color: pink;">${user.admin ? 'Admin' : 'User'}</p>
                   `;
                   accountDetails.innerHTML = html;
                   const html2 = `
                     <h2 style="text-align: center; color: white;">
-                      ${doc.data().user}，歡迎回來
+                      ${doc.data().user}, welcome back!
                     </h2>
                   `;
                   titleDetails.innerHTML = html2;

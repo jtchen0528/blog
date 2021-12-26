@@ -17,14 +17,17 @@ order: 2
   <div class="7u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding:0px 30px; margin: 0px;">
-          <b style="font-weight: bold;">NTHU</b> Electrical Engineering<br>
-          <b style="font-weight: bold;">Microsoft intern program</b> Cloud Hardware team<br>
-          <b style="font-weight: bold;">Logitech spring intern</b> Picture Analysis & System Development<br>
-          <b style="font-weight: bold;">CKSH</b><br>
-          <b style="font-weight: bold;">Hobbies:</b><br>
-          Musics(Taiwan indies), Guitar, Cats, Gaming, Web-designing.<br>
-          <b style="font-weight: bold;">Visited:</b><br>
-          Japan, US, Canada, Singapore, Philippines, Tailand, Malaysia.<br>
+          I'm Jhao-Ting (Jack) Chen <strong>(陳兆廷)</strong>. I graduated
+          from <b><a href="https://www.nthu.edu.tw/">National Tsing Hua University</a>(NTHU)</b>,
+          Taiwan.
+          I've worked at <b><a href="https://www.citi.sinica.edu.tw/">Academia
+                  Sinica</a></b>, <b><a
+                  href="https://www.microsoft.com/taiwan/about/">Microsoft</a></b> and <b><a
+                  href="https://www.logitech.com/zh-tw">Logitech</a></b>. My
+          research interests lie in <strong>Computer Vision</strong> and <strong>Deep
+              Learning</strong>.
+          In my free time, I love gaming,
+          indie musics, movies, cats and playing guitar. Welcome to my blog!
         </p>
         <a href="assets/files/Jhao_Ting_Chen_CV.html" style = "padding: 15px;">Click to view my CV</a>
     </div>
