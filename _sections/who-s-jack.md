@@ -10,7 +10,7 @@ order: 2
   <div class="5u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <a  class="image fit">
-        <img style="border-radius: 500px; max-height: 400px; max-width: 400px; margin: auto;" src="assets/images/avatar.jpg" alt="Logo of EashSheet" />
+        <img style="border-radius: 100%; max-height: 16em; max-width: 16em; margin: auto;" src="assets/images/avatar.jpg" alt="Me" />
         </a>
     </div>
   </div>
