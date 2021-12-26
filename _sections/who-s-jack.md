@@ -1,5 +1,5 @@
 ---
-title: 關於我
+title: About me
 icon: fa-question
 order: 2
 ---

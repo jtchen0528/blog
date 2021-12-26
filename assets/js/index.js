@@ -21,7 +21,7 @@ const setupUI = (user) => {
       const html = `
         <h1 id="title">${doc.data().user}</h1>
         <p>${user.email}</p>
-        <p style="color: pink;">${user.admin ? '管理員' : '一般用戶'}</p>
+        <p style="color: pink;">${user.admin ? 'Admin' : 'User'}</p>
       `;
       const avatar48 = `
         <img src="https://avatars.dicebear.com/api/jdenticon/` + user.email + `.svg" alt="Avatar of Jack Chen">
@@ -30,7 +30,7 @@ const setupUI = (user) => {
       accountAvatar.innerHTML = avatar48;
       const html2 = `
         <h2 style="text-align: center; color: white;">
-          ${doc.data().user}，歡迎回來
+          ${doc.data().user}, welcome back!
         </h2>
       `;
       titleDetails.innerHTML = html2;
@@ -67,7 +67,7 @@ const setupFeeds = (data) => {
                 <img src="https://avatars.dicebear.com/api/jdenticon/${doc.data().user}.svg" style="border-radius: 10px; width: 100%; height: auto; max-width: 100px;"/>
               </div>
               <div class="9u" style="padding: 0px; padding-left: 10px;">
-                <h4>${doc.data().user}&nbsp;在&nbsp;${feed.postedAt.toDate().toString().substring(4,21)}&nbsp;時說：</h4>
+                <h4>${doc.data().user}&nbsp; wrote at &nbsp;${feed.postedAt.toDate().toString().substring(4,21)}&nbsp;:</h4>
                 <p style="margin-bottom: 0px; font-size: 1.35em;">${feed.content}</p>
               </div>
           </div>
@@ -78,6 +78,6 @@ const setupFeeds = (data) => {
       })
     });
   } else {
-    feedList.innerHTML = '<h3 style = "text-align: center;">請先登入才能留言/發文</h3>';
+    feedList.innerHTML = '<h3 style = "text-align: center;">Log-in to comment or post something</h3>';
   }
 }
