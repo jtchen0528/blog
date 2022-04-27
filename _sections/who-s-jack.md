@@ -26,9 +26,7 @@ order: 2
         I've worked at <b><a href="https://www.citi.sinica.edu.tw/">Academia
                 Sinica</a></b>, <b><a
                 href="https://www.microsoft.com/taiwan/about/">Microsoft</a></b> and <b><a
-                href="https://www.logitech.com/zh-tw">Logitech</a></b>. My
-        research interests lie in <strong>Computer Vision</strong> and <strong>Deep
-            Learning</strong>.
+                href="https://www.logitech.com/zh-tw">Logitech</a></b>. <br/>
           In my free time, I love gaming,
           indie musics, movies, cats and playing guitar. Welcome to my blog!
         </p>
