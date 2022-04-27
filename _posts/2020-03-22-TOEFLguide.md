@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 托福105分教學
+title: 托福111分教學
 subtitle: 我怎麼準備托福的
 author: Jhao-Ting Chen
 icon: fa-graduation-cap
@@ -8,10 +8,19 @@ categories: [Articles]
 comment: true
 ---
 
-<h2>分數：105</h2>
+<h2>一戰：105</h2>
 <h3>閱讀29/聽力27/口說23/寫作26</h3>
+<h4>2020 Mar.</h4>
 
 <img style="max-width: 80%; height: auto;" src="https://i.imgur.com/XNiTMAG.jpg"><br>
+
+<hr />
+
+<h2>二戰：111</h2>
+<h3>閱讀29/聽力30/口說24/寫作28</h3>
+<h4>2022 Oct.</h4>
+
+<img style="max-width: 80%; height: auto;" src="https://jtchen0528.github.io/blog/assets/images/toefl2.png"><br>
 
 <hr />
 
@@ -63,52 +72,55 @@ comment: true
     口說總共4題：<br>
     第一題是意見題，支持或反對一個敘述，準備15秒講45秒。只要順順講，邏輯對，講滿45秒就可以。<br>
     重要的地方是要如何在短時間內歸納出幾個重點原因，口說時講好講滿講順。<br>
+    通常會是一個是非題問答句，要馬上想agree or disagree，之後準備1~2個理由解釋<br>
     小技巧是，可以在題目一亮出來時，馬上讀完開始想，不用等他慢慢念，可以讓準備時間多快10秒鐘。<br>
     範例：<br>
     <blockquote>
-    Opinion, Reason-1, Detail, Reason-2, detail, (Conclusion).<br>
-    As far as I'm concerned, ... is far preferable.<br>
-    My primary reason is... . <br>
-    On top of that... .<br>
-    So those are the reaons why I prefer ... instead of ... .<br>
-    Additionally, Moreover, Secondly, ... .<br>
+    結構：Opinion, Reason-1, Detail, Reason-2, detail, (Conclusion).<br><br>
+    1. As far as I'm concerned, ... is far preferable.<br>
+    2. My primary reason is... . <br>
+    3. On top of that... .<br>
+    4. So those are the reaons why I prefer ... instead of ... .<br>
+    替換句：Additionally, Moreover, Secondly, ... .<br>
     </blockquote>
     <br>
-    第2~4題是整理題，對聽到/讀到的內容整理後回答問題，準備30秒講60秒。必須要講到所有內容裡的重點，並有邏輯性。<br>
+    第2~4題是整理題，對聽到/讀到的內容整理後回答問題，準備30秒講60秒。必須要講到所有內容裡的重點，並有邏輯性。<br><br>
     第二題是先讀一小段文字，通常是學校的一個改變，聽一個學生針對這個改變發表看法的對話。再整理他的原因。<br>
     這題是相較起來簡單的部分，只要歸納好聽力裡的支持/反對的幾個原因跟為甚麼就好。<br>
     範例：<br>
     <blockquote>
-    (Change), Opinion, Reason-1, detail, Reason-2, detail, (Conclusion)<br>
-    According to the letter/notice, (change), the man/woman opposes/supports the idea for 2 reasons.<br>
-    First, ... . <br>
-    Additionally, ... .<br>
-    Moreover, he/she states that ... . <br>
-    So those are the reasons why the man/woman opposes/supports this idea.<br>
+    結構：(Change), Opinion, Reason-1, detail, Reason-2, detail, (Conclusion)<br><br>
+    1. According to the letter/notice, (change), the man/woman opposes/supports the idea for 2 reasons.<br>
+    2. First, ... . <br>
+    3. Additionally, ... .<br>
+    替換句：Moreover, he/she states that ... . <br>
+    4. So those are the reasons why the man/woman opposes/supports this idea.<br>
     </blockquote>
     <br>
     第三題是先讀一小段文字，通常是一個專有名詞的解釋，聽一個講師用例子介紹這個專有名詞的意思。要在60秒內用例子解釋完這個專有名詞。<br>
-    重點是要把例子裡跟這個專有名詞的連結講清楚，不能講了例子結果忘了回扣主題。聽得時候就要知道為甚麼題目要舉這個例子<br>
+    這裡不能只有單單解釋這個名詞，是要先講述這個例子，講這個例子跟這個名詞的關聯跟邏輯，再說：這就是為甚麼這個例子解釋了這個名詞。<br>
+    重點是要把例子裡跟這個專有名詞的連結講清楚，不能講了例子結果忘了回扣主題。所以在聽的時候就要知道為甚麼題目要舉這個例子。<br>
     範例：<br>
     <blockquote>
-    Concept, Definition, Example-1, details, Example-2, detail, (conclusion)<br>
-	  {Term} is defined as ... .<br>
-    The speaker introduces 2 examples to illustrate this ... .<br>
-    The first one is... . <br>
-    Secondly, he brings up the example of ... . <br>
-    So this is the way in which the lecturer explains the idea of {term}.<br>
+    結構：Concept, Definition, Example-1, details, Example-2, detail, (conclusion)<br><br>
+	  1. {Term} is defined as ... .<br>
+    2. The speaker introduces 2 examples to illustrate this ... .<br>
+    3. The first one is... . <br>
+    4. Secondly, he brings up the example of ... . <br>
+    5. So these are/this is the way in which the lecturer explains the idea of {term}.<br>
     </blockquote>
     <br>
     第四題是針對一個主題提出一到二個問題，每個問題會有一個針對這件事的例子。要在60秒內用例子解釋完題目裡的問題。<br>
-    這題要長話短說，講重點，一樣把例子跟題目的關聯講清楚。<br>
+    通常是一個大主題裡的兩個小主題，兩個小主題各有一個小例子或故事。<br>
+    這題要長話短說，講重點，把例子跟小主題的關聯講清楚。<br>
     範例：<br>
     <blockquote>
-    Intro, Point-1, example, point-2, example, (conclusion)<br>
-    The lecture is mainly discussing ... .<br>
-	  The first problem that the lecturer brings up is ... .<br>
-    The speaker uses an example to show this. ... .<br>
-	  Next, ... .
-	  The lecturer exampifies this by mentioning ... .<br>
+    結構：Intro, Point-1, example, point-2, example, (conclusion)<br><br>
+    1. The lecture is mainly discussing ... .<br>
+	  2. The first problem that the lecturer brings up is ... .<br>
+    3. The speaker uses an example to show this. ... .<br>
+	  4. Next, ... .
+	  5. The lecturer exampifies this by mentioning ... .<br>
     </blockquote>
     <br>
     我個人認為口說是台灣一般學生最難準備的，也最難衝高分的，我23分已經是我的極限了吧。畢竟要在如此短的時間內進步很難。<br>
@@ -128,66 +140,68 @@ comment: true
     字數約落在不超過300差不多。太多也不好。<br>
     以下的範例就是，只要在...的部分，填上這題的內容，就可以還算高分了。<br>
     <br>
-    範例-1(我都用這個)：<br>
+    模板-1(我都用這個)：<br>
     <blockquote>
-    Elaborated in the reading is a discussion over ... . Although the reading proposes ... , the lecturer negates such theories one afteranother. <br>
-    It is first suggested that ... . As the speaker reveals, however, ... .<br>
-    The reading passage also brings up that ... . Although this proposal appears plausible, the lecturer counters by saying ... .<br>
-    It is also mentioned that, finally, ... . However, the speaker casts doubt on this assumption again, pointing out that ... <br>
+    四大段，首段起頭，三段各講一個爭論點。
+    1. Elaborated in the reading is a discussion over {爭論點} . ... . Although the reading proposes {文章方意見} , the lecturer negates such theories one afteranother. ... . <br><br>
+    2. It is first suggested that {文章方論述一} . As the speaker reveals, however, {演講方反駁一} .<br><br>
+    3. The reading passage also brings up that {文章方論述二} . ... . Although this proposal appears plausible, the lecturer counters by saying that {演講方反駁二} . ... . <br><br>
+    It is also mentioned that, finally, {文章方論述三} . ... . However, the speaker casts doubt on this assumption again, pointing out that {演講方反駁三} . ... .<br><br>
     </blockquote>
     <br>
-    範例-2：<br>
+    模板-2：<br>
     <blockquote>
-    The reading passage provides ... . Although several theories are proposed to account for such attribution, the lecture contends that .. .<br>
-    As the reading suggests, ... . Despite this fact, the speaker ... .<br>
-    It is also brought by the reading that ... . Though being a problem, the hyposesis remains doubt. According to the lecturer, ... .<br>
-    What is also counted as a reason for ... . Still being skeptics, the speaker once again negates the proposal, ... .<br>
+    1. The reading passage provides {爭論點之資訊} . Although several theories are proposed to account for such attribution, the lecture contends that {演講方意見} .<br><br>
+    2. As the reading suggests, {文章方論述一} . ... . Despite this fact, the speaker {演講方反駁一} . ... . <br><br>
+    3. It is also brought by the reading that {文章方論述二} . ... . Though being a problem, the hyposesis remains doubt. According to the lecturer, {演講方反駁二} . ... . <br><br>
+    4. What is also counted as a reason for {文章方論述三} . ... . Still being skeptics, the speaker once again negates the proposal, {演講方反駁三} . ... . <br><br>
     </blockquote>
     <br>
     再來，Independent Writing 就是一般的作文題。針對題目寫一篇300字以上(盡量400字)的作文。時間是30分鐘。<br>
     Concession，是我覺得非常萬用的版型，針對贊成/反對，就是是非題很好用。基本上個就夠用了...<br>
     盡量在3分鐘內就打好草稿，把每個段落的優缺點部分寫好，之後就是打字的手速了。<br>
+    後記：有朋友前兩天才學怎麼用，考28分，另一個考27分。
     <ul>
 			<li>
-        Opening:<br>
+        第一段：Opening<br>
         <blockquote>
-        Nowadays, there's a growing concern over ... . Many people ... , while others are inclined to  ... . As far as I'm concerned, Iwould prefer ... for a spectrum of reasons.
+        Nowadays, there's a growing concern over {議題} . Many people {贊成的敘述} , while others are inclined to  {反對的敘述} . As far as I'm concerned, I would prefer {贊成 or 反對} for a spectrum of reasons.
         </blockquote>
       </li>
       <li>
-        Supposed Benefits x3:<br>
-        是你反對的那個選項的可能有的優點，在下一段要推翻的，所以寫能夠推翻的優點。<br>
+        第二段：Supposed Benefits x3<br>
+        這裡要先假設你是你選擇的那方的反方，幫反方想三個容易擊破的優點，下一段一一針對擊破。<br>
         <blockquote>
-          On the matter of ... , some people ... . This, as they claim ... (3 Supposed benefits).<br>
-          Moreover, ... .<br>
-          Furthermore, ... .<br>
+          On the matter of {論點} , some people {持贊同/反對意見} . This, as they claim {假優點一} . {論述} . <br>
+          Moreover, {假優點二} . {論述} . <br>
+          Furthermore, {假優點三} . {論述} . <br>
         </blockquote>
       </li>
       <li>
-        Weakness *3:<br>
-        這裡推翻上一段的優點。<br>
+        第三段：Weakness *3<br>
+        這裡一一推翻上一段講的假優點。用意在強調你選的意見才是好的。<br>
         <blockquote>
           Weakness, however, are inherent in the aforementioned claimes.<br> 
-          To begin with, ... . (Weakness 1) <br> 
-          Besides, ... . (Weakness 2)<br>
-          It should also be noted, last but not least, that ... . (Weakness 3)<br>
+          To begin with, {反駁假優點一} . {論述} . <br> 
+          Besides, {反駁假優點二} . {論述} . <br>
+          It should also be noted, last but not least, that {反駁假優點三} . {論述} . <br>
         </blockquote>
         </li>
       <li>
-        Main Arguments:<br>
-        真正選的東西的優點。<br>
+        第四段：Main Arguments<br>
+        真正我的論點的優點。<br>
         <blockquote>
-          To ... (achieve a purpose), therefore, ... (improve the weakness).<br>
-          It go without saying, firstly, that ... . (Benefit 1) <br>
-          Such practice makes more sense, additionally, because ... . (Benefit 2) <br>
-          Finally, ... . (Benefit 3) <br>
+          To {達成這個議題的目標或最好方案}, therefore, {我的論點} .<br>
+          It go without saying, firstly, that {優點一} . {論述} <br>
+          Such practice makes more sense, additionally, because {優點二} . {論述} <br>
+          Finally, {優點三} . {論述} <br>
         </blockquote>
       </li>
       <li>
-        Conclusion:<br>
+        第五段：Conclusion<br>
         <blockquote>
-          When it comes to  ... , therefore, ... (the side you're on) would be a much more appropriate approach/way. <br>
-          (Benefit 1), (Benefit 2), and (Benefit 3) are the main reasons why I prefer  ... , rather than ... . <br>
+          When it comes to {爭論點} , therefore, {我的論點} would be a much more appropriate approach/way. <br>
+          {優點一}, {優點二} and {優點三} are the main reasons why I prefer {我的論點} , rather than {反方論點} . <br>
         </blockquote>
       </li>
 		</ul>
