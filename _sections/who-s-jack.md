@@ -17,15 +17,18 @@ order: 2
   <div class="7u 12u$(mobile)">
     <div class="item" style="box-shadow: none;">
         <p style="text-align: left; padding:0px 30px; margin: 0px;">
-          I'm Jhao-Ting (Jack) Chen <strong>(陳兆廷)</strong>. I graduated
-          from <b><a href="https://www.nthu.edu.tw/">National Tsing Hua University</a>(NTHU)</b>,
-          Taiwan.
-          I've worked at <b><a href="https://www.citi.sinica.edu.tw/">Academia
-                  Sinica</a></b>, <b><a
-                  href="https://www.microsoft.com/taiwan/about/">Microsoft</a></b> and <b><a
-                  href="https://www.logitech.com/zh-tw">Logitech</a></b>. My
-          research interests lie in <strong>Computer Vision</strong> and <strong>Deep
-              Learning</strong>.
+        I'm Jhao-Ting (Jack) Chen <strong>(陳兆廷)</strong>.
+        I am an incoming ECE master student in <b><a href="https://www.cmu.edu/">Carnegie Mellon
+                Univerisy</a>(CMU)</b>.
+        I graduated from <b><a href="https://www.nthu.edu.tw/">National Tsing Hua
+                University</a>(NTHU)</b>,
+        Taiwan.
+        I've worked at <b><a href="https://www.citi.sinica.edu.tw/">Academia
+                Sinica</a></b>, <b><a
+                href="https://www.microsoft.com/taiwan/about/">Microsoft</a></b> and <b><a
+                href="https://www.logitech.com/zh-tw">Logitech</a></b>. My
+        research interests lie in <strong>Computer Vision</strong> and <strong>Deep
+            Learning</strong>.
           In my free time, I love gaming,
           indie musics, movies, cats and playing guitar. Welcome to my blog!
         </p>
